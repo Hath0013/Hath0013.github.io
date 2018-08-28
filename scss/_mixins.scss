@@ -1,0 +1,9 @@
+@mixin body-font() {
+  font-family: 'Montserrat';
+  font-weight: 300;
+}
+
+@mixin heading-font() {
+  font-weight: 400;
+  font-family: 'Montserrat';
+}

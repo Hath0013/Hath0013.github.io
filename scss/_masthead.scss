@@ -1,0 +1,86 @@
+header.masthead {
+  h2 {
+    line-height: 1.5rem;
+  }
+  height: 300px;
+  position: relative;
+}
+
+
+.banner-text {
+  position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   p {
+     font-size: 1.5rem;
+     color: $gray-100;
+     font-weight: normal;
+   }
+   .banner-img {
+     max-width: 250px;
+   }
+}
+
+.parallax-phone {
+    /* The image used */
+    background-image: url("../img/stars.jpg");
+
+    /* Set a specific height */
+    width: 100%;
+    height: 150px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+@media (min-width: 768px) {
+  .parallax {
+      /* The image used */
+      background-image: url("../img/stars.jpg");
+
+      /* Set a specific height */
+      width: 100%;
+      height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  header.masthead {
+    height: 500px;
+  }
+
+  .banner-text {
+    position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     p {
+       font-size: 1.5rem;
+       color: $gray-100;
+       font-weight: normal;
+     }
+     .banner-img {
+       max-width: 100%;
+     }
+  }
+
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    h1 {
+      font-size: 4.75em;
+      line-height: 4rem;
+    }
+
+  }
+}

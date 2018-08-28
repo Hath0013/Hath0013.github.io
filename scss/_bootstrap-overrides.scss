@@ -1,0 +1,93 @@
+// Bootstrap overrides for this template
+a {
+  color: $primary;
+  &:focus,
+  &:hover,
+  &:active {
+    color: darken($primary, 10%);
+  }
+}
+
+.btn {
+  border-width: 2px;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+}
+
+.bg-secondary {
+  background-color: $secondary !important;
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+.text-secondary {
+  color: $secondary !important;
+}
+
+.btn-primary {
+  border-color: $primary;
+  background-color: white;
+  color: $gray-800;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($primary, 10%);
+    border-color: darken($primary, 10%);
+  }
+}
+
+.btn-secondary {
+  border-color: $secondary;
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #717171 !important;
+}
+
+.card {
+  border-color: $secondary;
+  .card-header {
+    background-color: $secondary;
+    border-bottom: $secondary;
+  }
+}
+
+.publications-lg {
+  display: none;
+}
+
+
+@media (min-width: 768px) {
+  .accordion {
+    display: none;
+  }
+  .publications-lg {
+    display: inline-block;
+  }
+  .parallax {
+      /* The image used */
+      background-image: url("../img/stars.jpg");
+
+      /* Set a specific height */
+      width: 100%;
+      height: 300px;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+}

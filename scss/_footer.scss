@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: white;
+}
+
+.copyright {
+  background-color: white;
+} small {
+  color: $gray-700;
+}
+
+/* styles added by hannah */
+
+btn-social:hover {
+  background-color: $gray-100;
+}
+
+.list-inline a {
+  text-decoration: none;
+  color: $gray-900;
+}
+
+.list-inline a:hover {
+  text-decoration: none;
+}
+
+footer .btn-primary {
+  color: $primary;
+  background-color: $secondary;
+  border-color: $primary;
+}
