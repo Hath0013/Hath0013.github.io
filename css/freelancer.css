@@ -222,11 +222,10 @@ header.masthead h2 {
 
 .banner h5 {
   font-weight: 300;
-  color: #495057;
 }
 
 .banner .btn {
-  background-color: #28c0f1;
+  background-color: rgba(0, 0, 0, 0.01);
   border: solid 2px rgba(248, 249, 250, 0.9);
   color: rgba(248, 249, 250, 0.9);
   font-weight: 300;
@@ -236,9 +235,19 @@ header.masthead h2 {
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
+  background-image: url("../img/field.jpg");
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 @media (min-width: 768px) {
+  .banner {
+    height: 700px;
+  }
   .parallax {
     /* The image used */
     background-image: url("../img/stars.jpg");
@@ -253,7 +262,7 @@ header.masthead h2 {
   }
   .parallax-2 {
     /* The image used */
-    background-image: url("../img/icons.svg");
+    background-image: url("../img/mtns.jpg");
     /* Set a specific height */
     width: 100%;
     height: 300px;
@@ -283,6 +292,9 @@ header.masthead h2 {
   header.masthead h1 {
     font-size: 4.75em;
     line-height: 4rem;
+  }
+  header.masthead .banner {
+    height: 800px;
   }
 }
 
