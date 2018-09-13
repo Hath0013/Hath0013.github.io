@@ -247,6 +247,18 @@ header.masthead h2 {
   .banner {
     height: 700px;
   }
+  .banner {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/field.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .parallax {
     /* The image used */
     background-image: url("../img/stars.jpg");
