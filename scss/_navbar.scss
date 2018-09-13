@@ -4,8 +4,8 @@
   padding-bottom: 1rem;
   @include heading-font;
     background-color: rgba($gray-100, .9);
-  .navbar-brand img {
-    width: 60%;
+  .navbar-brand {
+    font-size: 20px;
   }
   .navbar-nav {
     margin-top: 1rem;

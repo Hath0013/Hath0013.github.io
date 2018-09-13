@@ -140,8 +140,8 @@ section h2 {
   background-color: rgba(248, 249, 250, 0.9);
 }
 
-#mainNav .navbar-brand img {
-  width: 60%;
+#mainNav .navbar-brand {
+  font-size: 20px;
 }
 
 #mainNav .navbar-nav {
@@ -210,34 +210,32 @@ header.masthead h2 {
   line-height: 1.5rem;
 }
 
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.banner-text p {
-  font-size: 1.5rem;
+.banner h1 {
   color: #f8f9fa;
-  font-weight: normal;
+  font-size: 40px;
+  font-weight: 300;
 }
 
-.banner-text .banner-img {
-  max-width: 250px;
+.banner-h1 {
+  font-weight: 200;
 }
 
-.parallax-phone {
-  /* The image used */
-  background-image: url("../img/stars.jpg");
-  /* Set a specific height */
-  width: 100%;
-  height: 150px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.banner h5 {
+  font-weight: 300;
+  color: #495057;
+}
+
+.banner .btn {
+  background-color: #28c0f1;
+  border: solid 2px rgba(248, 249, 250, 0.9);
+  color: rgba(248, 249, 250, 0.9);
+  font-weight: 300;
+}
+
+.banner {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
 }
 
 @media (min-width: 768px) {
@@ -253,22 +251,31 @@ header.masthead h2 {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .parallax-2 {
+    /* The image used */
+    background-image: url("../img/icons.svg");
+    /* Set a specific height */
+    width: 100%;
+    height: 300px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   header.masthead {
     height: 500px;
   }
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .banner {
+    padding-top: 200px;
+    padding-bottom: 150px;
+    color: #eaeaea;
   }
-  .banner-text p {
-    font-size: 1.5rem;
-    color: #f8f9fa;
-    font-weight: normal;
+  .banner h1 {
+    font-size: 60px;
   }
-  .banner-text .banner-img {
-    max-width: 100%;
+  .banner h5 {
+    font-weight: 300;
   }
 }
 
@@ -304,6 +311,14 @@ header.masthead h2 {
 
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
+}
+
+.portfolio .portfolio-item .featured {
+  width: 100%;
+}
+
+.portfolio .portfolio-item .featured:hover {
+  cursor: pointer;
 }
 
 @media (min-width: 576px) {

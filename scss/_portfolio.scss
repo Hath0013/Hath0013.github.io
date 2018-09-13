@@ -19,6 +19,12 @@
         font-size: 1.5rem;
       }
     }
+    .featured {
+      width: 100%;
+    }
+    .featured:hover {
+      cursor: pointer;
+    }
   }
   @media (min-width: 576px) {
     margin-bottom: -30px;
