@@ -201,15 +201,6 @@ section h2 {
   }
 }
 
-header.masthead {
-  height: 300px;
-  position: relative;
-}
-
-header.masthead h2 {
-  line-height: 1.5rem;
-}
-
 .banner h1 {
   color: #f8f9fa;
   font-size: 40px;
@@ -243,10 +234,19 @@ header.masthead h2 {
   background-size: cover;
 }
 
+.banner-featured {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/featured-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (min-width: 768px) {
-  .banner {
-    height: 700px;
-  }
   .banner {
     padding-top: 150px;
     padding-bottom: 50px;
@@ -258,6 +258,24 @@ header.masthead h2 {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+  }
+  .banner-featured {
+    padding-top: 225px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/featured-banner.jpg");
+    width: 100%;
+    height: 450px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+  .banner h5 {
+    font-weight: 300;
   }
   .parallax {
     /* The image used */
@@ -282,20 +300,6 @@ header.masthead h2 {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  header.masthead {
-    height: 500px;
-  }
-  .banner {
-    padding-top: 200px;
-    padding-bottom: 150px;
-    color: #eaeaea;
-  }
-  .banner h1 {
-    font-size: 60px;
-  }
-  .banner h5 {
-    font-weight: 300;
   }
 }
 
