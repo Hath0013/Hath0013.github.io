@@ -1,10 +1,17 @@
 // Bootstrap overrides for this template
 a {
-  color: $primary;
+  color: $gray-500;
   &:focus,
   &:hover,
   &:active {
     color: darken($primary, 10%);
+  }
+}
+
+.project {
+  transition: transform .2s;
+  &:hover {
+    transform: scale(1.05);
   }
 }
 
@@ -29,13 +36,14 @@ a {
 }
 
 .btn-primary {
-  border-color: $primary;
-  background-color: white;
-  color: $gray-800;
+  border: solid 1px $gray-600;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: $gray-700;
   &:hover,
   &:focus,
   &:active {
-    background-color: darken($primary, 10%);
+    background-color: rgba(0, 0, 0, 0.01);
+    color: $primary;
     border-color: darken($primary, 10%);
   }
 }
@@ -45,6 +53,23 @@ a {
   &:hover,
   &:focus,
   &:active {
+    background-color: darken($secondary, 10%);
+    border-color: darken($secondary, 10%);
+  }
+}
+
+.fab, .fas {
+  color: $gray-600;
+}
+
+.btn-gray {
+  border: 1px solid $gray-600;
+  &:hover,
+  &:focus,
+  &:active {
+    .fab, .fas {
+      color: $primary;
+    }
     background-color: darken($secondary, 10%);
     border-color: darken($secondary, 10%);
   }

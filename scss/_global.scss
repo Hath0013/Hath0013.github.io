@@ -51,6 +51,10 @@ hr.star-dark:after {
   background-color: white;
 }
 
+.gallery-center {
+  margin: 0 auto;
+}
+
 // Section Padding Settings
 section {
   h2 {
@@ -131,4 +135,47 @@ section {
 
 .logo {
   width: 75px;
+}
+
+.vimeo-lg {
+  display: none;
+}
+
+.vimeo-md {
+  display: none;
+}
+
+.vimeo-sm {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .vimeo-lg {
+    display: none;
+  }
+
+  .vimeo-md {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .vimeo-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .vimeo-lg {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .vimeo-md {
+    display: none;
+  }
+
+  .vimeo-sm {
+    display: none;
+  }
 }

@@ -53,6 +53,10 @@ hr.star-dark:after {
   background-color: white;
 }
 
+.gallery-center {
+  margin: 0 auto;
+}
+
 section h2 {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -132,16 +136,59 @@ section h2 {
   width: 75px;
 }
 
+.vimeo-lg {
+  display: none;
+}
+
+.vimeo-md {
+  display: none;
+}
+
+.vimeo-sm {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .vimeo-lg {
+    display: none;
+  }
+  .vimeo-md {
+    display: block;
+    margin: 0 auto;
+  }
+  .vimeo-sm {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .vimeo-lg {
+    display: block;
+    margin: 0 auto;
+  }
+  .vimeo-md {
+    display: none;
+  }
+  .vimeo-sm {
+    display: none;
+  }
+}
+
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 400;
   font-family: 'Montserrat';
-  background-color: rgba(248, 249, 250, 0.9);
+  background-color: rgba(248, 249, 250, 0.97);
 }
 
 #mainNav .navbar-brand {
   font-size: 20px;
+}
+
+#mainNav .navbar-brand:hover {
+  color: #343a40 !important;
 }
 
 #mainNav .navbar-nav {
@@ -155,7 +202,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #28c0f1;
+  color: #adb5bd;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -217,9 +264,15 @@ section h2 {
 
 .banner .btn {
   background-color: rgba(0, 0, 0, 0.01);
-  border: solid 2px rgba(248, 249, 250, 0.9);
+  border: solid 1px #ffffff;
   color: rgba(248, 249, 250, 0.9);
   font-weight: 300;
+}
+
+.banner .btn:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #28c0f1;
+  border: solid 1px #ffffff;
 }
 
 .banner {
@@ -232,13 +285,110 @@ section h2 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-.banner-featured {
+.banner-cmg {
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/featured-banner.jpg");
+  background-image: url("../img/projects/cmg/cmg-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-mpvr {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-sshr {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/sshr/sshr-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-harper {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/harper/harper-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-mg {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/mg/mg-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-pg {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/photog/pg-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-marvel {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/commissions/marvel-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-luxe {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/luxe/luxe-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-d {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/davidson/d-banner.jpg");
   width: 100%;
   height: 300px;
   background-position: top;
@@ -248,34 +398,16 @@ section h2 {
 
 @media (min-width: 768px) {
   .banner {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/field.jpg");
-    width: 100%;
+    margin-top: 0;
     height: 600px;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .banner-featured {
-    padding-top: 225px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/featured-banner.jpg");
-    width: 100%;
-    height: 450px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   .banner h1 {
     font-size: 50px;
   }
   .banner h5 {
     font-weight: 300;
+    max-width: 700px;
   }
   .parallax {
     /* The image used */
@@ -309,7 +441,8 @@ section h2 {
     line-height: 4rem;
   }
   header.masthead .banner {
-    height: 800px;
+    height: 900px;
+    background-position: center;
   }
 }
 
@@ -486,11 +619,19 @@ footer .btn-primary {
 }
 
 a {
-  color: #28c0f1;
+  color: #adb5bd;
 }
 
 a:focus, a:hover, a:active {
   color: #0ea7d8;
+}
+
+.project {
+  transition: transform .2s;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .btn {
@@ -514,13 +655,14 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  border-color: #28c0f1;
-  background-color: white;
-  color: #343a40;
+  border: solid 1px #868e96;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #495057;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: #0ea7d8;
+  background-color: rgba(0, 0, 0, 0.01);
+  color: #28c0f1;
   border-color: #0ea7d8;
 }
 
@@ -531,6 +673,23 @@ a:focus, a:hover, a:active {
 .btn-secondary:hover, .btn-secondary:focus, .btn-secondary:active {
   background-color: rgba(218, 224, 229, 0.9);
   border-color: rgba(218, 224, 229, 0.9);
+}
+
+.fab, .fas {
+  color: #868e96;
+}
+
+.btn-gray {
+  border: 1px solid #868e96;
+}
+
+.btn-gray:hover, .btn-gray:focus, .btn-gray:active {
+  background-color: rgba(218, 224, 229, 0.9);
+  border-color: rgba(218, 224, 229, 0.9);
+}
+
+.btn-gray:hover .fab, .btn-gray:hover .fas, .btn-gray:focus .fab, .btn-gray:focus .fas, .btn-gray:active .fab, .btn-gray:active .fas {
+  color: #28c0f1;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,

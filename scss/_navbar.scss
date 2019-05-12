@@ -3,9 +3,12 @@
   padding-top: 1rem;
   padding-bottom: 1rem;
   @include heading-font;
-    background-color: rgba($gray-100, .9);
+    background-color: rgba($gray-100, .97);
   .navbar-brand {
     font-size: 20px;
+  }
+  .navbar-brand:hover {
+    color: $gray-800!important;
   }
   .navbar-nav {
     margin-top: 1rem;
@@ -14,16 +17,16 @@
       text-align: right;
       padding-right: 1rem;
       a.nav-link {
-        color: $primary;
+        color: $gray-500;
         &:hover {
-          color: $highlight;
+          color: $primary;
         }
         &:active,
         &:focus {
           color: $primary;
         }
         &.active {
-          color: $highlight;
+          color: $primary;
         }
       }
     }

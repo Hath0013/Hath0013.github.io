@@ -11,9 +11,14 @@
 }
 .banner .btn {
   background-color: rgba(0, 0, 0, 0.01);
-  border: solid 2px $secondary;
+  border: solid 1px #ffffff;
   color: $secondary;
   font-weight: 300;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: $primary;
+    border: solid 1px #ffffff;
+  }
 }
 
 .banner {
@@ -26,13 +31,14 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-.banner-featured {
+.banner-cmg {
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/featured-banner.jpg");
+  background-image: url("../img/projects/cmg/cmg-banner.jpg");
   width: 100%;
   height: 300px;
   background-position: top;
@@ -40,39 +46,114 @@
   background-size: cover;
 }
 
+.banner-mpvr {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner-sshr {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/sshr/sshr-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
+.banner-harper {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/harper/harper-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-mg {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/mg/mg-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-pg {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/photog/pg-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-marvel {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/commissions/marvel-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-luxe {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/luxe/luxe-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-d {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: #eaeaea;
+  background-image: url("../img/projects/davidson/d-banner.jpg");
+  width: 100%;
+  height: 300px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @media (min-width: 768px) {
   .banner {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/field.jpg");
-    width: 100%;
+    margin-top: 0;
     height: 600px;
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .banner-featured {
-    padding-top: 225px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/featured-banner.jpg");
-    width: 100%;
-    height: 450px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   .banner h1 {
     font-size: 50px;
   }
   .banner h5 {
     font-weight: 300;
+    max-width: 700px;
   }
   .parallax {
       /* The image used */
@@ -113,7 +194,8 @@
       line-height: 4rem;
     }
     .banner {
-      height: 800px;
+      height: 900px;
+      background-position: center;
     }
 
   }
