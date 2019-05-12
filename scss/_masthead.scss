@@ -25,10 +25,10 @@
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/field.jpg");
+  background-image: url("../img/field-phone.jpg");
   width: 100%;
   height: 600px;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -50,7 +50,7 @@
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
+  background-image: url("../img/projects/mpvr/mpvr-phone.jpg");
   width: 100%;
   height: 300px;
   background-position: top;
@@ -145,8 +145,27 @@
 @media (min-width: 768px) {
   .banner {
     margin-top: 0;
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/field.jpg");
+    width: 100%;
     height: 600px;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .banner-mpvr {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
+    width: 100%;
+    height: 300px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .banner h1 {
     font-size: 50px;
