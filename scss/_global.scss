@@ -150,25 +150,8 @@ section {
   margin: 0 auto;
 }
 
-.pdf-l {
-  display: none;
-}
-
-.pdf-s {
-  display: block;
-  margin: 0 auto;
-}
 
 @media (min-width: 768px) {
-  .pdf-l {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .pdf-s {
-    display: none;
-  }
-
   .vimeo-lg {
     display: none;
   }
