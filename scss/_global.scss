@@ -150,8 +150,22 @@ section {
   margin: 0 auto;
 }
 
+ .pdf {
+   display: none;
+ }
+
+.pdf-text {
+  display: block;
+}
 
 @media (min-width: 768px) {
+  .pdf {
+    display: block;
+    margin: 0 auto;
+  }
+ .pdf-text {
+   display: none;
+ }
   .vimeo-lg {
     display: none;
   }
