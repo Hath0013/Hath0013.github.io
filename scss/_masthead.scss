@@ -1,10 +1,11 @@
 .banner h1 {
   color: $gray-100;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 300;
 }
 .banner-h1 {
   font-weight: 200;
+  font-size: 38px;
 }
 .banner h5 {
   font-weight: 300;
@@ -27,8 +28,8 @@
   color: #eaeaea;
   background-image: url("../img/field-phone.jpg");
   width: 100%;
-  height: 600px;
-  background-position: bottom;
+  height: 350px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -73,10 +74,10 @@
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/projects/harper/harper-banner.jpg");
+  background-image: url("../img/projects/harper/harper-banner-2.jpg");
   width: 100%;
-  height: 300px;
-  background-position: top;
+  height: 400px;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -87,7 +88,7 @@
   color: #eaeaea;
   background-image: url("../img/projects/mg/mg-banner.jpg");
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,12 +107,12 @@
 }
 
 .banner-marvel {
-  padding-top: 150px;
+  padding-top: 225px;
   padding-bottom: 50px;
   color: #eaeaea;
   background-image: url("../img/projects/commissions/marvel-banner.jpg");
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -142,6 +143,12 @@
 }
 
 @media (min-width: 768px) {
+
+  .banner-h1 {
+    font-weight: 200;
+    font-size: 48px;
+  }
+
   .banner {
     margin-top: 0;
     padding-top: 150px;
@@ -149,23 +156,26 @@
     color: #eaeaea;
     background-image: url("../img/field.jpg");
     width: 100%;
-    height: 600px;
-    background-position: center;
+    height: 400px;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   .banner-mpvr {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
-    width: 100%;
-    height: 300px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: none;
   }
+  //.banner-mpvr {
+//    padding-top: 150px;
+//    padding-bottom: 50px;
+//    color: #eaeaea;
+//    background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
+//    width: 100%;
+//    height: 300px;
+//    background-position: top;
+//    background-repeat: no-repeat;
+//    background-size: cover;
+//  }
   .banner h1 {
     font-size: 50px;
   }

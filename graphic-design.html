@@ -45,12 +45,24 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#about">About</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="featured.html">Featured</a>
-          </li>
-          <li class="nav-item mx-0 mx-lg-1">
+          <div class="dropdown show">
+            <a class="dropdown-toggle pt-1 nav-link" href="#" role="button" style="font-size: 14px" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+            <div class="dropdown-menu nav-item" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nav-item" href="snowbirdhaven.html">Snowbird Haven Website</a>
+              <a class="dropdown-item nav-item" href="masterpiece-vr.html">Virtual Reality UX/UI</a>
+              <a class="dropdown-item nav-item" href="jaski.html">JasKi Productions UX/UI</a>
+              <a class="dropdown-item nav-item" href="luxe.html">Luxe Magazine Ottawa</a>
+              <a class="dropdown-item nav-item" href="cmg-branding-guide.html">CMG Branding Guide</a>
+              <a class="dropdown-item nav-item" href="illustration.html">Comic Book Illustration</a>
+              <a class="dropdown-item nav-item text-primary" href="graphic-design.html">Harper Graphic Design</a>
+              <a class="dropdown-item nav-item" href="motion-graphics.html">Archer Motion Graphics</a>
+            </div>
+          </div>
+
+          <!--<li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Projects</a>
-          </li>
+          </li>-->
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="photography.html">Photography</a>
           </li>
@@ -64,22 +76,29 @@
 
   <!-- Banner -->
   <section class="banner-harper bg-primary text-center">
-    <div class="col-sm-8 col-md-8 col-lg-6 ml-auto mr-auto pb-3">
+    <!--<div class="col-sm-8 col-md-8 col-lg-6 ml-auto mr-auto pb-3">
       <h1 class="banner-h1">Charley Harper</h1>
       <p class="lead">Graphic Design</p>
-    </div>
+    </div>-->
   </section>
 
-    <section>
+  <div class="text-center pt-4">
+    <h1 class="pb-0 mb-0">Graphic Design</h1>
+    <p class="text-uppercase mb-0" style="font-size: 14px;">Red Panda</p>
+    <p class="text-center">_____</p>
+  </div>
+</div>
+
+    <section class="w-75 mx-auto">
       <div class="col-lg-8 ml-auto mr-auto pt-4">
-        <p>This project was inspired by Charley Harper's work and focussed on basic gestalt principles—proximity, continuation, closure, and negative/positive space.</p>
+        <p>This project was inspired by Charley Harper's work and focuses on the basic gestalt principles of proximity, continuation, closure, as well as negative and positive space.</p>
 
 
-          <div class="pb-5 mx-auto d-block w-75">
+          <div class="pb-5 mx-auto d-block">
             <img class="img-fluid" src="img/projects/harper/harper-2.jpg" class="img-fluid d-block" alt="">
           </div>
 
-          <div class="pb-5 mx-auto d-block w-75">
+          <div class="pb-5 mx-auto d-block">
             <img class="img-fluid" src="img/projects/harper/harper-sbs.jpg" class="img-fluid d-block" alt="">
           </div>
 
@@ -87,19 +106,17 @@
             <img class="img-fluid" src="img/projects/harper/harper.jpg" class="img-fluid d-block" alt="">
           </div>
 
-
-
         <p class="text-center">The final result.</p>
 
 
-        <div class="d-block mx-auto pb-5 pt-2 text-center">
+        <!--<div class="d-block mx-auto pb-5 pt-2 text-center">
           <img class="img-fluid d-inline pb-1 pl-1 pr-1" src="img/logos/ps.svg" alt="adobe photoshop logo">
           <img class="img-fluid d-inline pb-1 pl-1 pr-1" src="img/logos/ai.svg" alt="adobe illustrator logo">
-        </div>
+        </div>-->
 
-        <div class="text-center pb-5">
+        <!--<div class="text-center pb-5">
           <a class="btn btn-primary btn-md rounded-pill mb-1" href="index.html#pw">Return to Past Work</a>
-        </div>
+        </div>-->
 
       </div>
     </section>
@@ -109,14 +126,14 @@
 
 
     <!-- Footer -->
-    <footer class="footer text-center bg-secondary" id="footer">
+    <footer class="footer text-center" id="footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 mb-1 mb-lg-0">
+          <div class="col-md-3 col-lg-3 mb-1 mb-lg-0">
             <h5 class="text-uppercase mb-1 text-primary">Location</h5>
             <p class="mb-3">Ottawa, ON</p>
           </div>
-          <div class="col-md-4 mb-1 mb-lg-0">
+          <div class="col-md-3 col-lg-3 mb-1 mb-lg-0">
             <h5 class="text-uppercase mb-1 text-primary">Connect</h5>
             <ul class="list-inline mb-3">
               <li class="list-inline-item">
@@ -136,7 +153,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-md-4 mb-1 mb-lg-0">
+
+          <div class="col-md-3 col-lg-3 mb-1 mb-lg-0">
             <h5 class="text-uppercase mb-1 text-primary">Navigate</h5>
             <ul class="list-inline mb-3">
               <li class="list-inline-item d-block">
@@ -144,9 +162,6 @@
               </li>
               <li class="list-inline-item d-block">
                 <a href="index.html#about">About</a>
-              </li>
-              <li class="list-inline-item d-block">
-                <a href="featured.html">Featured</a>
               </li>
               <li class="list-inline-item d-block">
                 <a href="index.html#portfolio">Projects</a>
@@ -159,6 +174,37 @@
               </li>
             </ul>
           </div>
+
+          <div class="col-md-3 col-lg-3 mb-1 mb-lg-0">
+            <h5 class="text-uppercase mb-1 text-primary">Projects</h5>
+            <ul class="list-inline mb-3">
+              <li class="list-inline-item d-block">
+                <a href="snowbirdhaven.html">Snowbird Haven Website</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="masterpiece-vr.html">Virtual Reality UX/UI</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="jaski.html">Jaski Productions UX/UI</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="luxe.html">Luxe Magazine Ottawa</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="cmg-branding-guide.html">CMG Branding Guide</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="illustration.html">Comic Book Illustration</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="graphic-design.html" class="text-primary">Harper Graphic Design</a>
+              </li>
+              <li class="list-inline-item d-block">
+                <a href="motion-graphics.html">Archer Motion Graphics</a>
+              </li>
+            </ul>
+          </div>
+
         </div>
     </footer>
 

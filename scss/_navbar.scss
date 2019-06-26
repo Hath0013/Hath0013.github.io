@@ -15,9 +15,9 @@
     letter-spacing: 0.0625rem;
     li.nav-item {
       text-align: right;
-      padding-right: 1rem;
+      font-size: 14px;
       a.nav-link {
-        color: $gray-500;
+        color: $gray-600;
         &:hover {
           color: $primary;
         }
@@ -32,6 +32,32 @@
     }
   }
 }
+
+.dropdown-menu {
+  font-size: 14px;
+}
+
+.dropdown-item {
+  font-size: 12px;
+  &:hover {
+    color: $primary;
+  }
+  &:active,
+  &:focus {
+    background-color: $primary;
+    color: $gray-800;
+  }
+}
+
+.nav-link {
+  color: $gray-600;
+}
+
+.dropdown {
+  text-align: right;
+}
+
+
 @media(min-width:992px) {
   #mainNav {
     padding-top: 1rem;

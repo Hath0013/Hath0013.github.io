@@ -13,8 +13,8 @@ h6 {
   font-family: 'Montserrat';
 }
 
-hr.star-light,
-hr.star-dark {
+hr.star-dark,
+hr.star-light {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -24,8 +24,8 @@ hr.star-dark {
   margin-bottom: 2.5rem;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
+hr.star-dark:after,
+hr.star-light:after {
   position: relative;
   top: -.8em;
   display: inline-block;
@@ -81,6 +81,15 @@ section h2 {
   line-height: 2rem;
 }
 
+.btn-primary:active {
+  background-color: #28c0f1 !important;
+  border-color: #28c0f1 !important;
+}
+
+.btn-primary:focus {
+  background-color: #28c0f1 !important;
+}
+
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;
@@ -117,6 +126,11 @@ section h2 {
 .button:hover {
   background-color: #28c0f1 !important;
   color: #fff;
+}
+
+.button:hover:active, .button:hover:focus {
+  background-color: #28c0f1;
+  color: #343a40;
 }
 
 .text-splice-shadow {
@@ -157,6 +171,18 @@ section h2 {
   display: block;
 }
 
+.cards-desktop {
+  display: none;
+}
+
+.about-img {
+  display: show;
+}
+
+.about-img-desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .pdf {
     display: block;
@@ -175,9 +201,79 @@ section h2 {
   .vimeo-sm {
     display: none;
   }
+  .cards {
+    display: show;
+  }
+  .cards-desktop {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
+  .cards {
+    display: none;
+  }
+  .cards-desktop {
+    display: inline-block;
+  }
+  .about-img {
+    display: none;
+  }
+  .about-img-desktop {
+    display: inline-block;
+    background-image: url("../img/han-01.jpg");
+    width: 100%;
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s;
+  }
+  .about-img-desktop:hover {
+    background: url("../img/han-06.jpg") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s;
+  }
+  .luxe-card {
+    background-image: url("../img/projects/luxe/luxe-cover.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s;
+  }
+  .luxe-card:hover {
+    background: url("../img/projects/luxe/luxe-spread.png") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s;
+  }
+  .cmg-card {
+    background-image: url("../img/projects/cmg/cmg-cover.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1.02);
+  }
+  .cmg-card:hover {
+    background: url("../img/projects/cmg/cmg-spread.png") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1.02);
+  }
   .vimeo-lg {
     display: block;
     margin: 0 auto;
@@ -213,11 +309,11 @@ section h2 {
 
 #mainNav .navbar-nav li.nav-item {
   text-align: right;
-  padding-right: 1rem;
+  font-size: 14px;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #adb5bd;
+  color: #868e96;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
@@ -230,6 +326,31 @@ section h2 {
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: #28c0f1;
+}
+
+.dropdown-menu {
+  font-size: 14px;
+}
+
+.dropdown-item {
+  font-size: 12px;
+}
+
+.dropdown-item:hover {
+  color: #28c0f1;
+}
+
+.dropdown-item:active, .dropdown-item:focus {
+  background-color: #28c0f1;
+  color: #343a40;
+}
+
+.nav-link {
+  color: #868e96;
+}
+
+.dropdown {
+  text-align: right;
 }
 
 @media (min-width: 992px) {
@@ -265,12 +386,13 @@ section h2 {
 
 .banner h1 {
   color: #f8f9fa;
-  font-size: 40px;
+  font-size: 38px;
   font-weight: 300;
 }
 
 .banner-h1 {
   font-weight: 200;
+  font-size: 38px;
 }
 
 .banner h5 {
@@ -296,8 +418,8 @@ section h2 {
   color: #eaeaea;
   background-image: url("../img/field-phone.jpg");
   width: 100%;
-  height: 600px;
-  background-position: bottom;
+  height: 350px;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -342,10 +464,10 @@ section h2 {
   padding-top: 150px;
   padding-bottom: 50px;
   color: #eaeaea;
-  background-image: url("../img/projects/harper/harper-banner.jpg");
+  background-image: url("../img/projects/harper/harper-banner-2.jpg");
   width: 100%;
-  height: 300px;
-  background-position: top;
+  height: 400px;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -356,7 +478,7 @@ section h2 {
   color: #eaeaea;
   background-image: url("../img/projects/mg/mg-banner.jpg");
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -375,12 +497,12 @@ section h2 {
 }
 
 .banner-marvel {
-  padding-top: 150px;
+  padding-top: 225px;
   padding-bottom: 50px;
   color: #eaeaea;
   background-image: url("../img/projects/commissions/marvel-banner.jpg");
   width: 100%;
-  height: 300px;
+  height: 400px;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -411,6 +533,10 @@ section h2 {
 }
 
 @media (min-width: 768px) {
+  .banner-h1 {
+    font-weight: 200;
+    font-size: 48px;
+  }
   .banner {
     margin-top: 0;
     padding-top: 150px;
@@ -418,22 +544,14 @@ section h2 {
     color: #eaeaea;
     background-image: url("../img/field.jpg");
     width: 100%;
-    height: 600px;
-    background-position: center;
+    height: 400px;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
   }
   .banner-mpvr {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
-    width: 100%;
-    height: 300px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: none;
   }
   .banner h1 {
     font-size: 50px;
@@ -620,20 +738,38 @@ form .row:first-child .floating-label-form-group {
 .footer {
   padding-top: 5rem;
   padding-bottom: 3rem;
-  background-color: white;
+  background-color: #222222;
+}
+
+.footer ul li a {
+  color: #868e96;
+}
+
+.footer ul li a:hover {
+  color: #28c0f1;
+}
+
+.footer p {
+  color: #868e96;
 }
 
 .copyright {
-  background-color: white;
+  background-color: #222222;
+  border-top: 1px solid #28c0f1;
 }
 
 small {
-  color: #495057;
+  color: #adb5bd;
 }
 
 /* styles added by hannah */
-btn-social:hover {
-  background-color: #f8f9fa;
+.btn-social {
+  border: 0.5px solid rgba(248, 249, 250, 0.9);
+}
+
+.btn-social:hover {
+  background-color: #222222;
+  border: 0.5px solid #28c0f1;
 }
 
 .list-inline a {
@@ -714,11 +850,6 @@ a:focus, a:hover, a:active {
 
 .btn-gray {
   border: 1px solid #868e96;
-}
-
-.btn-gray:hover, .btn-gray:focus, .btn-gray:active {
-  background-color: rgba(218, 224, 229, 0.9);
-  border-color: rgba(218, 224, 229, 0.9);
 }
 
 .btn-gray:hover .fab, .btn-gray:hover .fas, .btn-gray:focus .fab, .btn-gray:focus .fas, .btn-gray:active .fab, .btn-gray:active .fas {

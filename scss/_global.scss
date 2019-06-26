@@ -1,4 +1,5 @@
 // Typography
+
 body {
   @include body-font;
 }
@@ -11,10 +12,10 @@ h5,
 h6 {
   @include heading-font;
 }
-
 // Custom Horizontal Rule with Star Icon
-hr.star-light,
-hr.star-dark {
+
+hr.star-dark,
+hr.star-light {
   max-width: 15rem;
   padding: 0;
   text-align: center;
@@ -24,8 +25,8 @@ hr.star-dark {
   margin-bottom: 2.5rem;
 }
 
-hr.star-light:after,
-hr.star-dark:after {
+hr.star-dark:after,
+hr.star-light:after {
   position: relative;
   top: -.8em;
   display: inline-block;
@@ -38,6 +39,7 @@ hr.star-dark:after {
 hr.star-light {
   border-color: $white;
 }
+
 hr.star-light:after {
   color: $white;
   background-color: $primary;
@@ -46,6 +48,7 @@ hr.star-light:after {
 hr.star-dark {
   border-color: $secondary;
 }
+
 hr.star-dark:after {
   color: $secondary;
   background-color: white;
@@ -54,8 +57,8 @@ hr.star-dark:after {
 .gallery-center {
   margin: 0 auto;
 }
-
 // Section Padding Settings
+
 section {
   h2 {
     font-size: 2.25rem;
@@ -68,14 +71,14 @@ section {
     }
   }
 }
-
 // Custom Button Size
+
 .btn-xl {
   padding: 1rem 1.75rem;
   font-size: 1.25rem;
 }
-
 // Custom Rounded Social Button
+
 .btn-social {
   width: 3.25rem;
   height: 3.25rem;
@@ -83,12 +86,21 @@ section {
   line-height: 2rem;
 }
 
+.btn-primary:active {
+  background-color: $primary!important;
+  border-color: $primary!important;
+}
+
+.btn-primary:focus {
+  background-color: $primary!important;
+}
 // Scroll to Top Button
 .scroll-to-top {
   z-index: 1042;
   right: 1rem;
   bottom: 1rem;
   display: none;
+
   a {
     width: 3.5rem;
     height: 3.5rem;
@@ -96,11 +108,10 @@ section {
     line-height: 3.1rem;
   }
 }
-
 /* styles added by Hannah */
-
 .pub-caption {
   color: $gray-700;
+
   h4 {
     color: $gray-900;
   }
@@ -114,9 +125,16 @@ section {
   border-color: $highlight !important;
   background-color: #fff !important;
   color: $highlight;
+
   &:hover {
     background-color: $highlight !important;
     color: #fff;
+
+    &:active,
+    &:focus {
+      background-color: $primary;
+      color: $gray-800;
+    }
   }
 }
 
@@ -150,12 +168,24 @@ section {
   margin: 0 auto;
 }
 
- .pdf {
-   display: none;
- }
+.pdf {
+  display: none;
+}
 
 .pdf-text {
   display: block;
+}
+
+.cards-desktop {
+  display: none;
+}
+
+.about-img {
+  display: show;
+}
+
+.about-img-desktop {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -163,9 +193,11 @@ section {
     display: block;
     margin: 0 auto;
   }
- .pdf-text {
-   display: none;
- }
+
+  .pdf-text {
+    display: none;
+  }
+
   .vimeo-lg {
     display: none;
   }
@@ -178,19 +210,99 @@ section {
   .vimeo-sm {
     display: none;
   }
-}
 
+  .cards {
+    display: show;
+  }
+
+  .cards-desktop {
+    display: none;
+  }
+
+}
 @media (min-width: 992px) {
-  .vimeo-lg {
-    display: block;
-    margin: 0 auto;
-  }
 
-  .vimeo-md {
+  .cards {
     display: none;
   }
 
-  .vimeo-sm {
+  .cards-desktop {
+    display: inline-block;
+  }
+
+  .about-img {
     display: none;
   }
-}
+
+  .about-img-desktop {
+    display: inline-block;
+    background-image: url("../img/han-01.jpg");
+    width: 100%;
+    height: 400px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .3s;
+    &:hover {
+      background: url("../img/han-06.jpg") no-repeat;
+      width: 100%;
+      height: 400px;
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all .3s;
+    }
+  }
+
+  .luxe-card {
+    background-image: url("../img/projects/luxe/luxe-cover.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s;
+    &:hover {
+      background: url("../img/projects/luxe/luxe-spread.png") no-repeat;
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transition: all .2s;
+    }
+  }
+
+  .cmg-card {
+    background-image: url("../img/projects/cmg/cmg-cover.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(1.02);
+    &:hover {
+      background: url("../img/projects/cmg/cmg-spread.png") no-repeat;
+      width: 100%;
+      height: 400px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      transform: scale(1.02);
+
+    }
+  }
+
+      .vimeo-lg {
+        display: block;
+        margin: 0 auto;
+      }
+
+      .vimeo-md {
+        display: none;
+      }
+
+      .vimeo-sm {
+        display: none;
+      }
+    }
