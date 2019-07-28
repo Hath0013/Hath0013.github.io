@@ -1,11 +1,11 @@
 .banner h1 {
   color: $gray-100;
-  font-size: 38px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 200;
 }
 .banner-h1 {
-  font-weight: 200;
-  font-size: 38px;
+  font-weight: 300;
+  font-size: 32px;
 }
 .banner h5 {
   font-weight: 300;
@@ -145,7 +145,7 @@
 @media (min-width: 768px) {
 
   .banner-h1 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 48px;
   }
 

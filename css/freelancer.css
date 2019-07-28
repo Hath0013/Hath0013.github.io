@@ -292,7 +292,7 @@ section h2 {
   padding-bottom: 1rem;
   font-weight: 400;
   font-family: 'Montserrat';
-  background-color: rgba(248, 249, 250, 0.97);
+  background-color: rgba(33, 37, 41, 0.97);
 }
 
 #mainNav .navbar-brand {
@@ -387,13 +387,13 @@ section h2 {
 
 .banner h1 {
   color: #f8f9fa;
-  font-size: 38px;
-  font-weight: 300;
+  font-size: 32px;
+  font-weight: 200;
 }
 
 .banner-h1 {
-  font-weight: 200;
-  font-size: 38px;
+  font-weight: 300;
+  font-size: 32px;
 }
 
 .banner h5 {
@@ -535,7 +535,7 @@ section h2 {
 
 @media (min-width: 768px) {
   .banner-h1 {
-    font-weight: 200;
+    font-weight: 300;
     font-size: 48px;
   }
   .banner {
