@@ -385,15 +385,24 @@ section h2 {
   }
 }
 
+#masthead {
+  display: none;
+}
+
+#about {
+  padding-top: 50px;
+}
+
 .banner h1 {
   color: #f8f9fa;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 200;
+  text-align: left;
 }
 
 .banner-h1 {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .banner h5 {
@@ -411,6 +420,10 @@ section h2 {
   background-color: rgba(0, 0, 0, 0.1);
   color: #28c0f1;
   border: solid 1px #ffffff;
+}
+
+.banner-text {
+  margin: 0 auto;
 }
 
 .banner {
@@ -534,6 +547,9 @@ section h2 {
 }
 
 @media (min-width: 768px) {
+  #about {
+    padding-top: 150px;
+  }
   .banner-h1 {
     font-weight: 300;
     font-size: 48px;

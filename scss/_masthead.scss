@@ -1,11 +1,21 @@
+#masthead {
+  display: none;
+}
+
+#about {
+  padding-top: 50px;
+}
+
+
 .banner h1 {
   color: $gray-100;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 200;
+  text-align: left;
 }
 .banner-h1 {
   font-weight: 300;
-  font-size: 32px;
+  font-size: 40px;
 }
 .banner h5 {
   font-weight: 300;
@@ -22,6 +32,9 @@
   }
 }
 
+.banner-text {
+  margin: 0 auto;
+}
 .banner {
   padding-top: 150px;
   padding-bottom: 50px;
@@ -143,6 +156,10 @@
 }
 
 @media (min-width: 768px) {
+
+ #about {
+   padding-top: 150px;
+ }
 
   .banner-h1 {
     font-weight: 300;
