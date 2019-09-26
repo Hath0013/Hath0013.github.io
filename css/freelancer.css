@@ -257,6 +257,24 @@ section h2 {
     background-size: contain;
     transition: all .2s;
   }
+  .luxe-card-2 {
+    background-image: url("../img/projects/luxe/luxe-cover-fall.png");
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s;
+  }
+  .luxe-card-2:hover {
+    background: url("../img/projects/luxe/luxe-spread-2.png") no-repeat;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: all .2s;
+  }
   .cmg-card {
     background-image: url("../img/projects/cmg/cmg-cover.png");
     width: 100%;
