@@ -45,14 +45,22 @@
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
           </li>
-          <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Projects</a>
-          </li>
+          <div class="dropdown show">
+            <a class="dropdown-toggle pt-1 nav-link" href="#" role="button" style="font-size: 14px" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+
+            <div class="dropdown-menu nav-item" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nav-item" href="index.html#illustration">Illustration</a>
+              <a class="dropdown-item nav-item" href="index.html#magazines">Magazine Design</a>
+              <a class="dropdown-item nav-item" href="index.html#branding">Branding</a>
+              <a class="dropdown-item nav-item" href="index.html#mographs">Motion Graphics</a>
+              <a class="dropdown-item nav-item" href="index.html#web">Web</a>
+            </div>
+          </div>
           <li class="nav-item mx-0 mx-lg-1">
             <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="photography.html">Photography</a>
           </li>
           <li class="nav-item mx-0 mx-lg-1">
-            <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="#connect">Connect</a>
+            <a class="nav-link py-1 px-0 px-lg-3 rounded js-scroll-trigger" href="mailto:hannahhatherell@gmail.com" target="_blank">Connect</a>
           </li>
         </ul>
       </div>
@@ -94,50 +102,92 @@
 
 
     <!-- About Img Phone & Tablet -->
-      <div class="col-sm-8 col-md-6 text-center mx-auto pt-5 about-img">
-        <img class="pt-2 mx-auto img-fluid rounded-circle" src="img/han-01.jpg" alt="about section image of hannah hatherell">
-      </div>
+    <div class="col-sm-8 col-md-6 text-center mx-auto pt-5 about-img">
+      <img class="pt-2 mx-auto img-fluid rounded-circle" src="img/han-01.jpg" alt="about section image of hannah hatherell">
+    </div>
 
-      <!-- About Img Desktop -->
+    <!-- About Img Desktop -->
 
-      <div class="container">
-        <div class="row pt-4">
-            <div class="col-lg-5 col-xl-5 about-img-desktop">
-              <div class="img-fluid"></div>
-            </div>
-          <div class="col-md-12 col-lg-7 col-xl-7">
-            <h3 class="text-uppercase text-primary text-left">About Hannah</h3>
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-lg-5 col-xl-5 about-img-desktop">
+          <div class="img-fluid"></div>
+        </div>
+        <div class="col-md-12 col-lg-7 col-xl-7">
+          <h3 class="text-uppercase text-primary text-left">About Hannah</h3>
 
-            <p class="text-left">With a strong background in photography and graphic design, I specialize in creating interactive experiences for digital platforms and print media. My recent work includes front-end web design, user experience and interface design for virtual reality, and magazine layout design.</p>
-            <p class="text-left">Working in the design industry for over four years has grown my experience in client communication, learning how to collaborate effectively with a team, and develop an efficient workflow.</p>
-            <p class="text-left">This expertise has brought measurable success to the organizations I’ve had the opportunity to work with, and improved their products tenfold.</p>
-            <p class="text-left">Let's get in touch!</p>
-            <div class="text-left">
+          <p class="text-left">With a background in photography and graphic design, I enjoy creating rich, interactive experiences for digital platforms and print media. My recent work includes front-end web design, user experience and interface design for virtual
+            reality, and magazine layout design.</p>
+          <p class="text-left">Working in the design industry for over four years has grown my experience in client communication, learning how to collaborate effectively with a team, and develop an efficient workflow.</p>
+          <p class="text-left">This expertise has brought measurable success to the organizations I’ve had the opportunity to work with, and improved their products tenfold.</p>
+          <p class="text-left">Let's get in touch!</p>
+          <div class="text-left">
             <a class="btn btn-primary btn-md rounded-pill mb-2" href="mailto:hannahhatherell@gmail.com">Send Hannah a Message</a>
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
 
   </section>
 
 
-  <section class="pt-5 pb-5" id="portfolio">
+
+  <!-- Illsutration Section -->
+  <section class="publications text-center pb-4 text-white" id="illustration" style="background-color: #282c30;">
+
+    <h3 class="text-center text-uppercase pt-5 text-primary">Illustration</h3>
+    <p class="text-center">_____</p>
+    <p class="text-center">Illustrated designs converted into vector artwork.</p>
+    <div id="pw" class="container">
+      <div class="row pt-4 text-center">
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <a class="d-block mx-auto mb-2" href="graphic-design.html">
+            <img class="img-fluid project" src="img/projects/harper/harper.jpg" alt="graphic design charley harper featured project image">
+          </a>
+          <p class="text-center pb-3 text-uppercase">Charley Harper Inspired</p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <a class="d-block mx-auto mb-2" href="perrault.html">
+            <img class="img-fluid project" src="img/projects/perrault/perrault.jpg" alt="motion graphics archer featured project image">
+          </a>
+          <p class="text-center pb-3 text-uppercase">Plusieurs Pièces de Perrault</p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <a class="d-block mx-auto mb-2" href="illustration.html">
+            <img class="img-fluid project" src="img/projects/commissions/loki-feature.jpg" alt="photo restoration featured image">
+          </a>
+          <p class="text-center pb-3 text-uppercase">Marvel & DC Characters</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Photography Section -->
+  <section class="publications bg-secondary text-center" id="photography">
+    <a href="photography.html" class="vimeo-lg">
+<img class="img-fluid" src="img/photog/photog-banner.jpg">
+</a>
+
+<a href="photography.html" class="vimeo-sm">
+<img class="img-fluid" src="img/photog/photog-banner-phone.jpg">
+</a>
+
+  </section>
+
+
+  <!-- UX Section
+  <section class="pt-5 pb-5 bg-secondary" id="portfolio">
     <div class="container">
 
-      <h4 class="pt-1 pb-1 text-center pt-4 text-uppercase">Web & UX Projects</h4>
+      <h4 class="pt-1 pb-1 text-center pt-4 text-uppercase">User Experience Design</h4>
       <p class="text-center">_____</p>
 
 
       <div class="row pt-5 text-center">
 
-        <div class="col-md-4 col-lg-4 col-xl-4 pb-5">
-          <a class="d-block mx-auto" href="snowbirdhaven.html">
-            <img class="img-fluid project mb-4" src="img/projects/sshr/sshr-feature.png" alt="">
-          </a>
-          <p class="text-center text-uppercase">Snowbird Haven</p>
-        </div>
+
         <div class="col-md-4 col-lg-4 col-xl-4 pb-5">
           <a class="d-block mx-auto" href="masterpiece-vr.html">
               <img class="img-fluid project mb-4" src="img/projects/mpvr/mpvr-2.png" alt="">
@@ -145,212 +195,208 @@
           <p class="text-center text-uppercase">MasterpieceVR</p>
         </div>
 
-        <div class="col-md-4 col-lg-4 col-xl-4 pb-5">
-          <a class="d-block mx-auto" href="jaski.html">
-                <img class="img-fluid project mb-4" src="img/projects/jaski/devices.png" alt="">
+      </div>
+    </div>
+  </section> -->
+
+
+
+
+  <!-- Magazine section -->
+    <section class="pt-3 pb-5 text-white" id="magazines" style="background-color: #282c30;">
+      <div class="container">
+
+        <h3 class="text-center text-uppercase pt-5 text-primary ">Magazines</h3>
+        <p class="text-center">_____</p>
+        <p class="text-center">End-to-end design including editorial, advertorial and advertising.</p>
+
+        <div class="row pt-3 text-center cards">
+          <!-- Phone & Tablet -->
+          <div class="col-md-6">
+            <a class="d-block mx-auto mb-2" href="https://console.virtualpaper.com/luxe/luxe-fall-2019/">
+                <img class="img-fluid project cover-open" src="img/projects/luxe/luxe-spread-2.png" alt="">
               </a>
-          <p class="text-center text-uppercase pt-2">JasKi Productions</p>
+            <p class="text-center pb-3 text-uppercase text-white">Luxe Magazine Ottawa<br>Spring/Summer 2019</p>
+          </div>
+          <div class="col-md-6">
+            <a class="d-block mx-auto mb-2" href="https://console.virtualpaper.com/luxe/luxe-spring-summer-2019/">
+                <img class="img-fluid project" src="img/projects/luxe/luxe-spread.png" alt="">
+              </a>
+            <p class="text-center pb-3 text-uppercase text-white">Luxe Magazine Ottawa<br>Fall 2019</p>
+          </div>
         </div>
 
-        <!--<div class="ml-2 mr-2 col-md-8 col-lg-6 col-xl-6 text-center mx-auto pt-5">
-          <a class="d-block mx-auto mb-2" href="cmg-branding-guide.html">
-            <img class="img-fluid project" src="img/projects/cmg/branding-guide.png" alt="">
-          </a>
-          <p class="text-center pb-3 text-uppercase pt-2">Branding Guide</p>
-        </div>-->
+
+        <!-- Desktop 2 -->
+        <div class="row pt-3 mx-auto">
+          <div class="col-lg-6 cards-desktop mx-auto">
+            <a class="d-block mx-auto" href="https://console.virtualpaper.com/luxe/luxe-spring-summer-2019/" target="_blank">
+              <div class="img-fluid luxe-card-2"></div>
+            </a>
+            <p class="text-center mb-0 text-uppercase text-white">Luxe Magazine Ottawa</p>
+            <p class="text-center pb-3 text-uppercase text-white" style="font-size: 14px;">Fall 2019</p>
+          </div>
+          <div class="col-lg-6 cards-desktop mx-auto">
+            <a class="d-block mx-auto" href="https://console.virtualpaper.com/luxe/luxe-spring-summer-2019/" target="_blank">
+              <div class="img-fluid luxe-card"></div>
+            </a>
+            <p class="text-center mb-0 text-uppercase text-white">Luxe Magazine Ottawa</p>
+            <p class="text-center pb-3 text-uppercase text-white" style="font-size: 14px;">Spring/Summer 2019</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
+
+  <!-- Branding Section -->
+  <section class="publications bg-secondary text-center pb-5" id="branding">
+
+    <h3 class="text-center text-uppercase pt-5 text-primary">Branding</h3>
+    <p class="text-center">_____</p>
+    <p class="text-center">Logo design & branding guidelines.</p>
+    <div id="pw" class="container pb-5">
+      <div class="row pt-4 text-center">
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="img/projects/branding/rhh.png" alt="">
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="img/projects/branding/jaski.png" alt="">
+        </div>
+        <div class="col-md-4 col-lg-4 col-xl-4">
+          <img class="img-fluid" src="img/projects/branding/cpt.png" alt="">
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="pt-3 pb-5" id="portfolio" style="background-color: #222222;">
-    <div class="container">
 
-      <h3 class="text-center text-uppercase pt-5 text-white">Print</h3>
-      <p class="text-center text-white">_____</p>
+  <!-- Motion Graphics Section -->
+  <section class="publications text-center text-white pb-5" id="mographs" style="background-color: #282c30;">
 
-      <div class="row pt-3 text-center cards">
-        <!-- Phone & Tablet -->
-        <div class="col-md-6">
-          <a class="d-block mx-auto mb-2" href="luxe.html">
-              <img class="img-fluid project cover-open" src="img/projects/luxe/luxe-spread-2.png" alt="">
-            </a>
-          <p class="text-center pb-3 text-uppercase text-white">Luxe Magazine Ottawa<br>Spring/Summer 2019</p>
+    <h3 class="text-center text-uppercase pt-5 text-primary">Motion Graphics</h3>
+    <p class="text-center">_____</p>
+    <p class="mx-auto">Created using Photoshop pastel brushes and produced in Adobe After Effects.</p>
+    <div id="pw" class="container pb-5">
+
+      <section>
+        <div class="col-lg-8 ml-auto mr-auto pt-4 pb-5">
+          <div class="text-center">
+            <iframe class="vimeo-lg" src="https://player.vimeo.com/video/189808580" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe class="vimeo-md" src="https://player.vimeo.com/video/189808580" width="540" height="260" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            <iframe class="vimeo-sm" src="https://player.vimeo.com/video/189808580" width="340" height="160" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="col-md-6">
-          <a class="d-block mx-auto mb-2" href="luxe.html">
-              <img class="img-fluid project" src="img/projects/luxe/luxe-spread.png" alt="">
-            </a>
-          <p class="text-center pb-3 text-uppercase text-white">Luxe Magazine Ottawa<br>Fall 2019</p>
-        </div>
+      </section>
+    </div>
+
+  </section>
+
+
+  <!-- Web Section -->
+  <section class="pt-5 pb-5 bg-secondary" id="web">
+    <!--<div class="container">
+
+      <div class="all-content">
+        <div class="container-1">
+        <div class="planet-1"></div>
+        <div class="planet-1-line-1"></div>
+        <div class="planet-1-line-2"></div>
+        <div class="planet-1-line-3"></div>
+        <div class="planet-1-circle-1"></div>
+        <div class="planet-1-circle-2"></div>
       </div>
 
+      <div class="container-2">
+        <div class="planet-2-wrap">
+        <div class="planet-2"></div>
+        <div class="planet-2-ring-1"></div>
+         <div class="planet-2-circle-1"></div>
+         <div class="planet-2-circle-2"></div>
+         <div class="planet-2-circle-3"></div>
+         <div class="planet-2-circle-4"></div>
+         <div class="planet-2-circle-5"></div>
+         <div class="planet-2-circle-6"></div>
+      </div>
+      </div>
 
-      <!-- Desktop 1
-      <div class="row pt-3 mx-auto">
-        <div class="col-lg-6 cards-desktop mx-auto">
-          <a class="d-block mx-auto" href="luxe.html">
-            <div class="img-fluid luxe-card"></div>
-          </a>
-          <p class="text-center pb-3 text-uppercase text-white">Luxe Magazine Ottawa</p>
+      <div class="container-3">
+      <div class="planet-3"></div>
+      <div class="planet-3-circle-1"></div>
+      <div class="planet-3-circle-2"></div>
+      <div class="planet-3-circle-3"></div>
+      <div class="planet-3-ring"></div>
+      </div>
+      <div class="shadow"></div>
+      <div class="rocket">
+        <i class="fa fa-rocket" aria-hidden="true"></i>
+      </div>
+      </div>
+    </div> -->
+
+      <h4 class="pt-1 pb-1 text-center pt-4 text-uppercase text-primary">Web</h4>
+      <p class="text-center">_____</p>
+      <p class="text-center">Snowbird Summer Haven Resort, a responsive WordPress website.</p>
+
+
+      <div class="row text-center">
+
+        <div class="mx-auto">
+          <a class="d-block mx-auto" href="https://snowbirdhaven.ca" target="_blank">
+              <img class="img-fluid project mb-4" src="img/projects/sshr/sshr-feature.png" alt="">
+            </a>
+          <p class="text-center text-uppercase">Snowbird Haven</p>
         </div>
+
+        <!-- jaski
+          <div class="col-md-6 col-lg-6 col-xl-6 pb-5">
+            <a class="d-block mx-auto" href="jaski.html">
+                  <img class="img-fluid project mb-4" src="img/projects/jaski/devices.png" alt="">
+                </a>
+            <p class="text-center text-uppercase pt-2">JasKi Productions</p>
+          </div>
+
+        </div>
+      </div> -->
+  </section>
+
+
+
+
+
+
+
+
+  <!-- Cmg branding guidlelines section
+  <section class="pt-5 pb-5" id="portfolio">
+    <div class="container">
+
+      <h4 class="pt-1 pb-1 text-center pt-4 text-uppercase">Branding</h4>
+      <p class="text-center">_____</p>
+      <p class="text-center">placeholder</p>
+
+
+      <div class="row pt-5 text-center">
+
         <div class="col-lg-6 cards-desktop mx-auto">
           <a class="d-block mx-auto" href="cmg-branding-guide.html">
             <div class="img-fluid cmg-card"></div>
           </a>
           <p class="text-center pb-3 text-uppercase text-white">CMG Branding Guide</p>
         </div>
-      </div> -->
 
-      <!-- Desktop 2 -->
-      <div class="row pt-3 mx-auto">
-        <div class="col-lg-6 cards-desktop mx-auto">
-          <a class="d-block mx-auto" href="luxe.html">
-            <div class="img-fluid luxe-card-2"></div>
+        <div class="ml-2 mr-2 col-md-8 col-lg-6 col-xl-6 text-center mx-auto pt-5">
+          <a class="d-block mx-auto mb-2" href="cmg-branding-guide.html">
+            <img class="img-fluid project" src="img/projects/cmg/branding-guide.png" alt="">
           </a>
-          <p class="text-center mb-0 text-uppercase text-white">Luxe Magazine Ottawa</p>
-          <p class="text-center pb-3 text-uppercase text-white" style="font-size: 14px;">Fall 2019</p>
+          <p class="text-center pb-3 text-uppercase pt-2">Branding Guide</p>
         </div>
-        <div class="col-lg-6 cards-desktop mx-auto">
-          <a class="d-block mx-auto" href="luxe.html">
-            <div class="img-fluid luxe-card"></div>
-          </a>
-          <p class="text-center mb-0 text-uppercase text-white">Luxe Magazine Ottawa</p>
-          <p class="text-center pb-3 text-uppercase text-white" style="font-size: 14px;">Spring/Summer 2019</p>
-        </div>
-      </div>
-      <!--<div class="col-lg-6 cards-desktop mx-auto">
-        <a class="d-block mx-auto" href="cmg-branding-guide.html">
-          <div class="img-fluid cmg-card"></div>
-        </a>
-        <p class="text-center pb-3 text-uppercase text-white">CMG Branding Guide</p>
-      </div> -->
-
-    </div>
-  </section>
 
 
-  <!-- Publications Section -->
-  <section class="publications bg-secondary text-center pb-4" id="past-work">
-
-    <h3 class="text-center text-uppercase pt-5">Other Work</h3>
-    <p class="text-center">_____</p>
-    <div id="pw" class="container">
-      <div class="row pt-4 text-center">
-
-        <div class="col-md-4 col-lg-4 col-xl-4">
-          <a class="d-block mx-auto mb-2" href="illustration.html">
-            <img class="img-fluid project" src="img/projects/commissions/loki-feature.jpg" alt="photo restoration featured image">
-          </a>
-          <p class="text-center pb-3 text-uppercase">Illustration</p>
-        </div>
-        <div class="col-md-4 col-lg-4 col-xl-4">
-          <a class="d-block mx-auto mb-2" href="graphic-design.html">
-            <img class="img-fluid project" src="img/projects/harper/harper.jpg" alt="graphic design charley harper featured project image">
-          </a>
-          <p class="text-center pb-3 text-uppercase">Graphic Design</p>
-        </div>
-        <div class="col-md-4 col-lg-4 col-xl-4">
-          <a class="d-block mx-auto mb-2" href="motion-graphics.html">
-            <img class="img-fluid project" src="img/projects/archer.jpg" alt="motion graphics archer featured project image">
-          </a>
-          <p class="text-center pb-3 text-uppercase">Motion Graphics</p>
-        </div>
       </div>
     </div>
+  </section> -->
 
-    <div class="container">
-
-      <!-- Publications Section Desktop Start
-      <div class="row pb-5">
-        <div class="col-lg-8 mx-auto">
-          <img src="img/publications/perrault.jpg" alt="Element High School theatre poster" style="width:100%">
-        </div>-->
-
-      <!--
-                <div class="col-lg-4">
-                  <h4 class="pt-1 pb-1 font-weight-bold pt-4">Plusieurs Pièces de Perrault</h4>
-                  <h6 class="pt-1 pb-1 font-weight-bold">Theatre Poster</h6>
-                  <p>A theatre poster created for a play put on by Element High School. The four stories of Thumbelina, Puss in Boots, Sleeping Beauty and Blue Beard combined into one.</p>
-                </div>-->
-    </div>
-    </div>
-
-
-  </section>
-
-  <!-- Publications Section Desktop End -->
-
-  <!-- Parallax
-  <div class="parallax-2"></div>
-  -->
-
-
-
-
-
-  <!-- Footer -->
-  <!--
-  <footer class="footer text-center bg-secondary" id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 mb-1 mb-lg-0">
-          <h5 class="text-uppercase mb-1 text-primary">Location</h5>
-          <p class="mb-3">Ottawa, ON</p>
-        </div>
-        <div class="col-md-4 mb-1 mb-lg-0">
-          <h5 class="text-uppercase mb-1 text-primary">Connect</h5>
-          <ul class="list-inline mb-3">
-            <li class="list-inline-item">
-              <a class="btn btn-gray text-center rounded-circle" href="https://www.linkedin.com/in/hannahhatherell/" target="_blank">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-gray text-center rounded-circle" href="http://www.instahu.com/wildhchild" target="_blank">
-                <i class="fab fa-instagram"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-              <a class="btn btn-gray text-center rounded-circle" href="mailto:hannahhatherell@gmail.com" target="_blank">
-                  <i class="fas fa-envelope"></i>
-                </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4 mb-1 mb-lg-0">
-          <h5 class="text-uppercase mb-1 text-primary">Navigate</h5>
-          <ul class="list-inline mb-3">
-            <li class="list-inline-item d-block">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="index.html#about">About</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="featured.html">Featured</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="index.html#portfolio">Projects</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="photography.html">Photography</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="index.html#connect">Connect</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-  </footer>
-
-  <div class="copyright py-4 text-center text-white">
-    <div class="container">
-      <small class="font-weight-light">©2019 Hannah Hatherell ALL RIGHTS RESERVED</small><br>
-      <small>Built by Hannah Hatherell | Hosted on Github <i class="fab fa-github"></i></small>
-    </div>
-  </div>-->
 
   <!-- Footer -->
   <footer id="connect" class="footer text-center pb-3" id="footer">
@@ -391,10 +437,7 @@
               <a href="index.html#about">About</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="index.html#portfolio">Projects</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="photography.html">Photography</a>
+              <a href="index.html#illustration">Projects</a>
             </li>
             <li class="list-inline-item d-block">
               <a href="index.html#connect">Connect</a>
@@ -406,28 +449,25 @@
           <h5 class="text-uppercase mb-1 text-primary">Projects</h5>
           <ul class="list-inline mb-3">
             <li class="list-inline-item d-block">
-              <a href="snowbirdhaven.html">Snowbird Haven Website</a>
+              <a href="graphic-design.html">Charley Harper Red Panda</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="masterpiece-vr.html">Virtual Reality UX/UI</a>
+              <a href="perrault.html">Plusieurs Pièces de Perrault</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="jaski.html">Jaski Productions UX/UI</a>
+              <a href="illustration.html">Marvel & DC Characters</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="luxe.html">Luxe Magazine Ottawa</a>
+              <a href="index.html#magazines">Luxe Ottawa Magazine</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="cmg-branding-guide.html">CMG Branding Guide</a>
+              <a href="index.html#branding">Branding Logo Design</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="illustration.html">Comic Book Illustration</a>
+              <a href="index.html#mographs">Motion Graphics</a>
             </li>
             <li class="list-inline-item d-block">
-              <a href="graphic-design.html">Harper Graphic Design</a>
-            </li>
-            <li class="list-inline-item d-block">
-              <a href="motion-graphics.html">Archer Motion Graphics</a>
+              <a href="index.html#web">SSHR WordPress Website</a>
             </li>
           </ul>
         </div>
@@ -435,11 +475,10 @@
       </div>
   </footer>
 
-  <div class="copyright py-4 text-center"
-    <div class="container pt-1">
-      <small class="font-weight-light">©2019 Hannah Hatherell ALL RIGHTS RESERVED</small><br>
-      <small>Built by Hannah Hatherell | Hosted on Github <i class="fab fa-github"></i></small>
-    </div>
+  <div class="copyright py-4 text-center" <div class="container pt-1">
+    <small class="font-weight-light">©2019 Hannah Hatherell ALL RIGHTS RESERVED</small><br>
+    <small>Built by Hannah Hatherell | Hosted on Github <i class="fab fa-github"></i></small>
+  </div>
   </div>
 
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->

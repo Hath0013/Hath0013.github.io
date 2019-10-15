@@ -189,6 +189,321 @@ section {
   display: none;
 }
 
+/*test
+.all-content {
+  position: absolute;
+  top: 3750px;
+}
+
+.container-1 {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+}
+  .planet-1 {
+  width: 100px;
+  height: 100px;
+  border: 5px solid #666;
+  border-radius: 50%;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  animation: planetcolor 5s reverse ease-in-out infinite;
+}
+
+@keyframes planetcolor {
+  0% { background: yellow; }
+  50% { background: skyblue; }
+ 100% { background: yellow; }
+}
+
+.planet-1-line-1 {
+  border-bottom: solid 5px #666;
+  width: 30px;
+  position: absolute;
+  top: 180px;
+  left: 125px;
+}
+
+.planet-1-line-2 {
+  border-bottom: solid 5px #666;
+  width: 50px;
+  position: absolute;
+  top: 160px;
+  left: 180px;
+}
+
+.planet-1-line-3 {
+  border-bottom: solid 5px #666;
+  width: 35px;
+  position: absolute;
+  top: 205px;
+  left: 175px;
+}
+
+.planet-1-circle-1 {
+  width: 15px;
+  height: 15px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 166px;
+  left: 166px;
+  animation:  planet1orbit1 5s ease-in-out infinite;
+}
+
+@keyframes planet1orbit1 {
+from { transform: rotate(0deg) translateX(55px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(55px) rotate(-360deg); }
+  }
+
+.planet-1-circle-2 {
+   width: 10px;
+  height: 10px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  top: 170px;
+  left: 170px;
+  animation:  planet1orbit2 4s ease-in-out reverse infinite;
+}
+
+@keyframes planet1orbit2 {
+from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
+  to   { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
+  }
+
+.container-2 {
+  position: absolute;
+  top: 50px;
+  left: 175px;
+}
+
+.planet-2-wrap {
+   animation:  planet2 4s ease-in-out reverse infinite;
+}
+
+@keyframes planet2 {
+  0% { transform: translate(0,-10px) }
+  50% { transform: translate(0px,10px) }
+  100% { transform: translate(0,-10px) }
+}
+
+.planet-2 {
+  width: 85px;
+  height: 85px;
+  border: 5px solid #666;
+  border-radius: 50%;
+  background-color: snow;
+  position: absolute;
+  top: 128px;
+  left: 354px;
+  animation: planetcolor2 5s reverse ease-in-out infinite;
+}
+
+@keyframes planetcolor2 {
+  0% { background: snow; }
+  50% { background: #ccc; }
+ 100% { background: snow; }
+}
+
+.planet-2-ring-1 {
+    width: 60px;
+    height: 115px;
+    border-top-right-radius: 110px;
+    border-bottom-right-radius: 110px;
+    border: 5px solid #666;
+    border-left: 0;
+    position: absolute;
+    top: 112px;
+    left: 400px;
+}
+
+.planet-2-circle-1 {
+  width: 10px;
+  height: 10px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: skyblue;
+  position: absolute;
+  top: 105px;
+  left: 390px;
+}
+
+.planet-2-circle-2 {
+  width: 10px;
+  height: 10px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: lightgreen;
+  position: absolute;
+  top: 190px;
+  left: 355px;
+}
+
+.planet-2-circle-3 {
+  width: 10px;
+  height: 10px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  top: 130px;
+  left: 330px;
+}
+
+.planet-2-circle-4 {
+  width: 7px;
+  height: 7px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: yellow;
+  position: absolute;
+  top: 130px;
+  left: 331px;
+  animation:  planet2circle2 5s ease-in-out infinite;
+}
+
+
+@keyframes planet2circle2 {
+  0% { transform: translate(0,-20px) }
+  50% { transform: translate(0px,15px) }
+  100% { transform: translate(0,-20px) }
+}
+
+.planet-2-circle-5 {
+  width: 5px;
+  height: 5px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: orange;
+  position: absolute;
+  top: 220px;
+  left: 365px;
+}
+
+.planet-2-circle-6 {
+  width: 3px;
+  height: 3px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  top: 120px;
+  left: 365px;
+}
+
+.container-3 {
+   position: absolute;
+  top: 95px;
+}
+
+.planet-3 {
+  width: 100px;
+  height: 100px;
+  border:  solid 5px #666;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  left: 700px;
+  background: radial-gradient(yellow, red);
+}
+
+.planet-3-circle-1 {
+  width: 20px;
+  height: 20px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: #FFEB98;
+  position: absolute;
+  top: 85px;
+  left: 695px;
+}
+
+.planet-3-ring {
+  width: 20px;
+  height: 35px;
+  border-top-left-radius: 110px;
+  border-bottom-left-radius: 110px;
+  border: 5px solid #666;
+  border-right: 0;
+  position: absolute;
+  top: 70px;
+  left: 686px;
+  transform: rotate(35deg);
+}
+
+.rocket {
+  position: absolute;
+  top: 200px;
+  left: 745px;
+  font-size: 2rem;
+  color: #871700;
+  transform: rotate(-45deg);
+  animation: liftoff 6s ease-in infinite forwards;
+}
+
+@keyframes liftoff {
+  0% { transform: translate(0px,-10px); }
+  0% { transform: rotate(-45deg); }
+  100% { transform: translate(50px,-200px); }
+}
+
+.shadow {
+  width: 50px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 220px;
+  left: 735px;
+  background-color: rgba(0,0,0,.3);
+  animation: shadow 6s ease-in infinite forwards;
+}
+
+@keyframes shadow {
+  0% { transform: scale(-1,-1); }
+  50% { transform: scale(-1,0); }
+  100% { transform: scale(0,0); }
+}
+
+.planet-3-circle-2 {
+  width: 8px;
+  height: 8px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: snow;
+  position: absolute;
+  top: 140px;
+  left: 680px;
+  animation: planet3circle 10s ease-in-out;
+}
+
+@keyframes planet3circle {
+  0% { transform: translate(0,0px) }
+  25% { transform: translate(0,25px) }
+  50% { transform: translate(0px,10px) }
+  75% { transform: translate(0,15px) }
+  100% { transform: translate(0,0px) }
+}
+
+.planet-3-circle-3 {
+  width: 4px;
+  height: 4px;
+  border: solid 5px #666;
+  border-radius: 50%;
+  background-color: lightgreen;
+  position: absolute;
+  top: 160px;
+  left: 690px;
+  animation: planet3circle 10s ease-in-out;
+}
+*/
+
+
+
+
 @media (min-width: 768px) {
   .pdf {
     display: block;
