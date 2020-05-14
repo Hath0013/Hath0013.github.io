@@ -501,7 +501,13 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
 }
 */
 
-
+.link {
+  color: $primary;
+  &:hover {
+    text-decoration: none;
+    color: $gray-500;
+  }
+}
 
 
 @media (min-width: 768px) {
