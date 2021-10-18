@@ -3,6 +3,11 @@ body {
   font-weight: 300;
 }
 
+.btn-primary {
+  font-weight: 600;
+  font-family: 'Montserrat';
+}
+
 h1,
 h2,
 h3,
@@ -504,6 +509,32 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   color: #adb5bd;
 }
 
+.gif {
+  max-width: 100%;
+}
+
+.c-logo-1 {
+  max-width: 35%;
+}
+
+.c-logo-2 {
+  max-width: 40%;
+}
+
+.c-logo-3 {
+  max-width: 55%;
+}
+
+.as {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.as-2 {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .pdf {
     display: block;
@@ -528,6 +559,19 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   .cards-desktop {
     display: none;
   }
+  .c-logo-1 {
+    max-width: 15%;
+  }
+  .c-logo-2 {
+    max-width: 20%;
+  }
+  .c-logo-3 {
+    max-width: 30%;
+  }
+  .as {
+    max-width: 60%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 992px) {
@@ -551,7 +595,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
     transition: all .3s;
   }
   .about-img-desktop:hover {
-    background: url("../img/han-06.jpg") no-repeat;
+    background: url("../img/portrait.jpg") no-repeat;
     width: 100%;
     height: 400px;
     background-position: right;
@@ -634,7 +678,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
 }
 
 #mainNav .navbar-brand {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #mainNav .navbar-brand:hover {
@@ -1155,11 +1199,11 @@ footer .btn-primary {
 }
 
 a {
-  color: #adb5bd;
+  color: #212529;
 }
 
 a:focus, a:hover, a:active {
-  color: #0ea7d8;
+  color: #28c0f1;
 }
 
 .project {
@@ -1191,15 +1235,16 @@ a:focus, a:hover, a:active {
 }
 
 .btn-primary {
-  border: solid 1px #868e96;
-  background-color: rgba(0, 0, 0, 0.01);
-  color: #495057;
+  background-color: #28c0f1;
+  border: solid 1px #28c0f1;
+  color: white;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background-color: rgba(0, 0, 0, 0.01);
-  color: #28c0f1;
-  border-color: #0ea7d8;
+  border: solid 1px #28c0f1;
+  background-color: #28c0f1;
+  color: #343a40;
+  font-weight: 600;
 }
 
 .btn-secondary {
@@ -1229,6 +1274,10 @@ button.bg-primary:focus {
   background-color: #717171 !important;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .card {
   border-color: rgba(248, 249, 250, 0.9);
 }
@@ -1240,6 +1289,10 @@ button.bg-primary:focus {
 
 .publications-lg {
   display: none;
+}
+
+.hh {
+  padding-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -1260,5 +1313,8 @@ button.bg-primary:focus {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+  .hh {
+    padding-top: 50px;
   }
 }
