@@ -510,7 +510,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
 }
 
 .gif {
-  max-width: 100%;
+  max-width: 300px;
 }
 
 .c-logo-1 {
@@ -571,6 +571,9 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   .as {
     max-width: 60%;
     margin: 0 auto;
+  }
+  .gif {
+    max-width: 500px;
   }
 }
 
