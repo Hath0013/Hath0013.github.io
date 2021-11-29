@@ -190,6 +190,11 @@ section h2 {
   display: none;
 }
 
+.as-text {
+  max-width: 665px;
+  margin: 0 auto;
+}
+
 /*test
 .all-content {
   position: absolute;
