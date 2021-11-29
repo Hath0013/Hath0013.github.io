@@ -183,6 +183,7 @@ section h2 {
 .about-img {
   display: show;
   width: 75%;
+  margin-top: 40px;
 }
 
 .about-img-desktop {

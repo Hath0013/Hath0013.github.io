@@ -187,6 +187,7 @@ section {
 .about-img {
   display: show;
   width: 75%;
+  margin-top: 40px;
 }
 
 .about-img-desktop {
@@ -594,6 +595,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
 
 }
 @media (min-width: 992px) {
+
 
   .cards {
     display: none;
