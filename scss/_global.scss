@@ -90,14 +90,7 @@ section {
   line-height: 2rem;
 }
 
-.btn-primary:active {
-  background-color: $primary!important;
-  border-color: $primary!important;
-}
 
-.btn-primary:focus {
-  background-color: $primary!important;
-}
 // Scroll to Top Button
 .scroll-to-top {
   z-index: 1042;
@@ -122,7 +115,15 @@ section {
 }
 
 .bb {
-  border-bottom: solid 10px $primary;
+  border-bottom: solid 2px $gray-300;
+  max-width: 735px;
+  margin: 0 auto;
+}
+
+.bb-full {
+  border-bottom: solid 2px $gray-300;
+  max-width: 885px;
+  margin: 0 auto;
 }
 
 .button {
@@ -199,323 +200,82 @@ section {
   margin: 0 auto;
 }
 
-/*test
-.all-content {
-  position: absolute;
-  top: 3750px;
+.intro-0 {
+  background-color: #fffaa8;
 }
 
-.container-1 {
-  position: absolute;
-  top: 50px;
-  left: 200px;
-}
-  .planet-1 {
-  width: 100px;
-  height: 100px;
-  border: 5px solid #666;
-  border-radius: 50%;
-  position: absolute;
-  top: 125px;
-  left: 125px;
-  animation: planetcolor 5s reverse ease-in-out infinite;
+.intro-0:hover {
+  background-color: white;
 }
 
-@keyframes planetcolor {
-  0% { background: yellow; }
-  50% { background: skyblue; }
- 100% { background: yellow; }
+.intro-1-solid {
+  background-color: #ffd297;
 }
 
-.planet-1-line-1 {
-  border-bottom: solid 5px #666;
-  width: 30px;
-  position: absolute;
-  top: 180px;
-  left: 125px;
+.intro-1:hover {
+  background-color: #ffd297;
 }
 
-.planet-1-line-2 {
-  border-bottom: solid 5px #666;
-  width: 50px;
-  position: absolute;
-  top: 160px;
-  left: 180px;
+.intro-2-solid {
+  background-color: #a5ecfe;
 }
 
-.planet-1-line-3 {
-  border-bottom: solid 5px #666;
-  width: 35px;
-  position: absolute;
-  top: 205px;
-  left: 175px;
+.intro-2:hover {
+  background-color: #a5ecfe;
+}
+.intro-3-solid {
+  background-color: #fdbef6;
 }
 
-.planet-1-circle-1 {
-  width: 15px;
-  height: 15px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: #fff;
-  position: absolute;
-  top: 166px;
-  left: 166px;
-  animation:  planet1orbit1 5s ease-in-out infinite;
+.intro-3:hover {
+  background-color: #fdbef6;
 }
 
-@keyframes planet1orbit1 {
-from { transform: rotate(0deg) translateX(55px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(55px) rotate(-360deg); }
-  }
-
-.planet-1-circle-2 {
-   width: 10px;
-  height: 10px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: yellow;
-  position: absolute;
-  top: 170px;
-  left: 170px;
-  animation:  planet1orbit2 4s ease-in-out reverse infinite;
+.intro-4-solid {
+  background-color: #cffda1;
 }
 
-@keyframes planet1orbit2 {
-from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
-  to   { transform: rotate(360deg) translateX(70px) rotate(-360deg); }
-  }
-
-.container-2 {
-  position: absolute;
-  top: 50px;
-  left: 175px;
+.intro-4:hover {
+  background-color: #cffda1;
 }
 
-.planet-2-wrap {
-   animation:  planet2 4s ease-in-out reverse infinite;
+.center {
+  margin: 0 auto;
+  max-width: 730px;
 }
 
-@keyframes planet2 {
-  0% { transform: translate(0,-10px) }
-  50% { transform: translate(0px,10px) }
-  100% { transform: translate(0,-10px) }
+.bg-blue {
+  background-color: #99cbf9;
 }
 
-.planet-2 {
-  width: 85px;
-  height: 85px;
-  border: 5px solid #666;
-  border-radius: 50%;
-  background-color: snow;
-  position: absolute;
-  top: 128px;
-  left: 354px;
-  animation: planetcolor2 5s reverse ease-in-out infinite;
+.bg-lt-blue {
+  background-color: #f0f4ff;
 }
 
-@keyframes planetcolor2 {
-  0% { background: snow; }
-  50% { background: #ccc; }
- 100% { background: snow; }
+.bg-grn {
+  background-color: #92e3ca;
 }
 
-.planet-2-ring-1 {
-    width: 60px;
-    height: 115px;
-    border-top-right-radius: 110px;
-    border-bottom-right-radius: 110px;
-    border: 5px solid #666;
-    border-left: 0;
-    position: absolute;
-    top: 112px;
-    left: 400px;
+.bg-lt-grn {
+  background-color: #ebfffa;
 }
 
-.planet-2-circle-1 {
-  width: 10px;
-  height: 10px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: skyblue;
-  position: absolute;
-  top: 105px;
-  left: 390px;
+.bg-yel {
+  background-color: #ffe795;
 }
 
-.planet-2-circle-2 {
-  width: 10px;
-  height: 10px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: lightgreen;
-  position: absolute;
-  top: 190px;
-  left: 355px;
-}
-
-.planet-2-circle-3 {
-  width: 10px;
-  height: 10px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: orange;
-  position: absolute;
-  top: 130px;
-  left: 330px;
-}
-
-.planet-2-circle-4 {
-  width: 7px;
-  height: 7px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: yellow;
-  position: absolute;
-  top: 130px;
-  left: 331px;
-  animation:  planet2circle2 5s ease-in-out infinite;
+.bg-lt-yel {
+  background-color: #fff5e7;
 }
 
 
-@keyframes planet2circle2 {
-  0% { transform: translate(0,-20px) }
-  50% { transform: translate(0px,15px) }
-  100% { transform: translate(0,-20px) }
-}
 
-.planet-2-circle-5 {
-  width: 5px;
-  height: 5px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: orange;
-  position: absolute;
-  top: 220px;
-  left: 365px;
-}
-
-.planet-2-circle-6 {
-  width: 3px;
-  height: 3px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: red;
-  position: absolute;
-  top: 120px;
-  left: 365px;
-}
-
-.container-3 {
-   position: absolute;
-  top: 95px;
-}
-
-.planet-3 {
-  width: 100px;
-  height: 100px;
-  border:  solid 5px #666;
-  border-radius: 50%;
-  position: absolute;
-  top: 75px;
-  left: 700px;
-  background: radial-gradient(yellow, red);
-}
-
-.planet-3-circle-1 {
-  width: 20px;
-  height: 20px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: #FFEB98;
-  position: absolute;
-  top: 85px;
-  left: 695px;
-}
-
-.planet-3-ring {
-  width: 20px;
-  height: 35px;
-  border-top-left-radius: 110px;
-  border-bottom-left-radius: 110px;
-  border: 5px solid #666;
-  border-right: 0;
-  position: absolute;
-  top: 70px;
-  left: 686px;
-  transform: rotate(35deg);
-}
-
-.rocket {
-  position: absolute;
-  top: 200px;
-  left: 745px;
-  font-size: 2rem;
-  color: #871700;
-  transform: rotate(-45deg);
-  animation: liftoff 6s ease-in infinite forwards;
-}
-
-@keyframes liftoff {
-  0% { transform: translate(0px,-10px); }
-  0% { transform: rotate(-45deg); }
-  100% { transform: translate(50px,-200px); }
-}
-
-.shadow {
-  width: 50px;
-  height: 20px;
-  border-radius: 50%;
-  position: absolute;
-  top: 220px;
-  left: 735px;
-  background-color: rgba(0,0,0,.3);
-  animation: shadow 6s ease-in infinite forwards;
-}
-
-@keyframes shadow {
-  0% { transform: scale(-1,-1); }
-  50% { transform: scale(-1,0); }
-  100% { transform: scale(0,0); }
-}
-
-.planet-3-circle-2 {
-  width: 8px;
-  height: 8px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: snow;
-  position: absolute;
-  top: 140px;
-  left: 680px;
-  animation: planet3circle 10s ease-in-out;
-}
-
-@keyframes planet3circle {
-  0% { transform: translate(0,0px) }
-  25% { transform: translate(0,25px) }
-  50% { transform: translate(0px,10px) }
-  75% { transform: translate(0,15px) }
-  100% { transform: translate(0,0px) }
-}
-
-.planet-3-circle-3 {
-  width: 4px;
-  height: 4px;
-  border: solid 5px #666;
-  border-radius: 50%;
-  background-color: lightgreen;
-  position: absolute;
-  top: 160px;
-  left: 690px;
-  animation: planet3circle 10s ease-in-out;
-}
-*/
 
 .link {
-  color: $primary;
+  color: $gray-600;
   &:hover {
     text-decoration: none;
-    color: $gray-500;
+    color: $gray-700;
   }
 }
 
@@ -544,6 +304,11 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   max-width: 90%;
   margin: 0 auto;
 }
+
+.bg-yellow {
+  background-color: #fff9de;
+}
+
 
 
 @media (min-width: 768px) {
@@ -637,7 +402,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   .luxe-card {
     background-image: url("../img/projects/luxe/luxe-cover.png");
     width: 100%;
-    height: 400px;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -645,7 +410,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
     &:hover {
       background: url("../img/projects/luxe/luxe-spread.png") no-repeat;
       width: 100%;
-      height: 400px;
+      height: 250px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -656,7 +421,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
   .luxe-card-2 {
     background-image: url("../img/projects/luxe/luxe-cover-fall.png");
     width: 100%;
-    height: 400px;
+    height: 250px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -664,7 +429,7 @@ from { transform: rotate(0deg) translateX(70px) rotate(0deg); }
     &:hover {
       background: url("../img/projects/luxe/luxe-spread-2.png") no-repeat;
       width: 100%;
-      height: 400px;
+      height: 250px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;

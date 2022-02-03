@@ -4,7 +4,7 @@ a {
   &:focus,
   &:hover,
   &:active {
-    color: $primary;
+    color: $gray-600;
   }
 }
 
@@ -28,7 +28,7 @@ a {
 }
 
 .text-primary {
-  color: $primary !important;
+  color: $gray-900 !important;
 }
 
 .text-secondary {
@@ -36,16 +36,15 @@ a {
 }
 
 .btn-primary {
-  background-color: $primary;
-  border: solid 1px $primary;
-  color: white;
+  background-color: $gray-200;
+  border: solid 1px white;
+  color: $gray-900;
   &:hover,
   &:focus,
   &:active {
-    border: solid 1px $primary;
-    background-color: $primary;
-    color: $gray-800;
-    font-weight: 600;
+    border: solid 1px $gray-400;
+    background-color: $gray-400;
+    color: $gray-900;
   }
 }
 
@@ -69,7 +68,7 @@ a {
   &:focus,
   &:active {
     .fab, .fas {
-      color: $primary;
+      color: black;
     }
   }
 }

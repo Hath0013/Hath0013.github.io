@@ -1,23 +1,22 @@
 .footer {
   padding-top: 5rem;
   padding-bottom: 3rem;
-  background-color: #222222;
+  background-color: white;
   & ul li a {
-    color: $gray-600;
+    color: $gray-900;
   }
   & ul li a:hover {
-    color: $primary;
+    color: #000000;
   }
   & p {
-    color: $gray-600;
+    color: $gray-900;
   }
 }
 
 .copyright {
-  background-color: #222222;
-  border-top: 1px solid $primary;
-} small {
-  color: $gray-500;
+  color: $gray-900;
+  background-color: white;
+  font-size: 12px;
 }
 
 /* styles added by hannah */
@@ -28,7 +27,7 @@
 
 .btn-social:hover {
   background-color: #222222;
-  border: .5px solid $primary;
+  border: .5px solid #000000;
 }
 
 .list-inline a {
