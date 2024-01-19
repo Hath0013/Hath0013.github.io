@@ -1,14 +1,14 @@
 @mixin body-font() {
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
   font-weight: 300;
 }
 
 @mixin heading-font() {
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
 }
 
 @mixin btn-font() {
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
 }

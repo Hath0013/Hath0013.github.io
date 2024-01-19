@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- NREUM: (1) -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" />
+    <!-- change title to match the h1 heading -->
+    <title>Creative Cloud Player (HLS-everywhere Player)</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://use.typekit.net/wna4qxf.js"></script>
+    <script src="https://www-ccv.adobe.io/buildb027816616/resource/ccv/js/ingest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.2.5/polyfill.min.js"></script>
+    <script src="https://www-ccv.adobe.io/buildb027816616/resource/ccv/js/video.min.js"></script>
+    <script src="https://www-ccv.adobe.io/buildb027816616/resource/ccv/js/videojs-media-sources.js"></script>
+    <script src="https://www-ccv.adobe.io/buildb027816616/resource/ccv/js/ccv-betaplayer.min.js"></script>
+    <script src="https://www-ccv.adobe.io/buildb027816616/resource/ccv/js/VisitorAPI.js"></script>
+    <style type="text/css">
+        html {
+            overflow: hidden
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            display: block;
+            font-family: adobe-clean, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            overflow: hidden;
+            position: absolute
+        }
+    </style>
+    <script type="application/javascript">
+        window.ccv$serverData = { "status": "ok", "rootDir": "https://www-ccv.adobe.io/buildb027816616/resource/ccv", "duration": 11.856, "settings_json": "json/behance/config.json", "strings_json": "json/behance/en.json", "ccvid": "L3UndYXKLZM", "clientid": "behance", "language": "en", "debug": "false", "posterframe": "https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/image/L3UndYXKLZM_poster.jpg?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e", "seriesthumbnail_sprite_url": "https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/image/L3UndYXKLZM_sprite_0.jpg?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e", "thumbnail_per_sprite": 50, "total_number_of_sprites": 1, "series_thumbnail_frequency": 2, "series_thumbnail_width": 160, "series_thumbnail_height": 86, "displayThumbnails": true, "wwwhost": "https://www-ccv.adobe.io/v1/player/ccv/L3UndYXKLZM?api_key=behance1", "info": "https://www-ccv.adobe.io/v1/player/ccv/L3UndYXKLZM/info?api_key=behance1", "m3u8URL": "https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/rend/master.m3u8?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e", "mp4URL": "https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/rend/L3UndYXKLZM_720.mp4?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e", "inputHeight": 1642, "inputWidth": 3024, "playCountBeacon": { "url": "https://www-ccv.adobe.io/v1/player/ccv/L3UndYXKLZM/firstplay", "type": "POST", "headers": { "Content-Type": "application/json", "X-Api-Key": "behance1" }, "data": { "nonce": "xr1fQxFPYG6T4Zhz/+k09xxgabI=" } }, "playCountBeaconRetry": 1, "strings": { "%press_esc": "Press Esc to exit full screen mode.", "%error_has_occurred": "Sorry, there was a problem loading this video.", "%error_has_occurred_sub": "Please try refreshing the page.", "%conversion_in_progress": "We’re preparing your video.", "%conversion_in_progress_sub": "This page will refresh automatically when it’s ready. Or, check back shortly to see it.", "%invalid_video": "Sorry, we can’t find the video you’re looking for.", "%invalid_video_sub": "Please check that the URL was typed correctly. Or, the video may have been removed.", "%bad_video": "Sorry, we couldn’t prepare this video for playback.", "%bad_video_sub": "Please try uploading the video again. If that doesn’t help, there may be a probem with the file.", "%reload_video": "We’re almost done preparing your video.", "%reload_video_sub": "This page will refresh automatically when it’s ready. Or, check back shortly to see it.", "%removed_video": "This video no longer exists.", "%removed_video_sub": "Sorry, the video you’re looking for has been removed.", "%enable_flash_player": "Sorry, there was a problem loading this video.", "%enable_flash_player_sub": "Please try refreshing the page." }, "settings": { "COMMENTS": "The format of this file MUST match the definitions in ccv-player.d.ts. For validation use http://jsonlint.com.", "brightcove": { "bcid": "2679128769001", "playerid": "2727268340001", "playerkey": "AQ~~,AAACb7Se6nk~,ee7RfT0WJHLewwaRq30kZmTGY507rmYu", "rootdir": "", "theme": "default" }, "debugging": { "debug": "false", "log_info": "true", "log_warn": "true", "log_debug": "true", "log_error": "true" }, "client": { "bgcolor": "#FFFFFF" } }, "minframeWidth": 1280, "minframeHeight": 696 };
+    </script>
+    <link href="https://www-ccv.adobe.io/buildb027816616/resource/ccv/css/video-js.css" rel="stylesheet"/>
+    <link href="https://www-ccv.adobe.io/buildb027816616/resource/ccv/css/ccv-player.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<video id="video-js"  preload="none" playsinline class="video-js" data-poster="https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/image/L3UndYXKLZM_poster.jpg?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e"
+       data-seriesthumbnail_sprite_url="https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/image/L3UndYXKLZM_sprite_0.jpg?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e" data-series_thumbnail_frequency="2"
+       data-series_thumbnail_width="160" data-series_thumbnail_height="86"
+       data-thumbnail_per_sprite="50" data-total_number_of_sprites="1"
+       data-status="ok" data-rootdir="https://www-ccv.adobe.io/buildb027816616/resource/ccv" data-duration="11.856" data-displayThumbnails="true"
+       data-environ="embed" data-settings_json="json/behance/config.json" data-strings_json="json/behance/en.json" data-secure="true"
+       data-ccvid="L3UndYXKLZM" data-clientid="behance" data-mediatoken="hdnts=st=1705438077~exp=1705697277~acl=/shared_assets/image/*!/z/L3UndYXKLZM/rend/*!/i/L3UndYXKLZM/rend/*!/L3UndYXKLZM/rend/*!/L3UndYXKLZM/image/*!/L3UndYXKLZM/captions/*~hmac=6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e"
+       data-wwwhost="https://www-ccv.adobe.io/v1/player/ccv/L3UndYXKLZM?api_key=behance1" data-inputWidth="3024" data-inputHeight="1642" data-debug="false" data-env="prod"
+       data-clientappname="behance" src="">
+ 	<source src="https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/rend/master.m3u8?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e" type="application/x-mpegURL">
+	<source src="https://cdn-prod-ccv.adobe.com/L3UndYXKLZM/rend/L3UndYXKLZM_720.mp4?hdnts=st%3D1705438077%7Eexp%3D1705697277%7Eacl%3D%2Fshared_assets%2Fimage%2F*%21%2Fz%2FL3UndYXKLZM%2Frend%2F*%21%2Fi%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Frend%2F*%21%2FL3UndYXKLZM%2Fimage%2F*%21%2FL3UndYXKLZM%2Fcaptions%2F*%7Ehmac%3D6ca3018a02abe57caa76474ead93ea558fe485d0a6a360447c2af1e75900155e" type="video/mp4">
+
+</video>
+</body>
+</html>

@@ -179,6 +179,34 @@
   background-size: cover;
 }
 
+@media (min-width: 0px) {
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/various-sm.png");
+    width: 100%;
+    height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  }
+
+@media (min-width: 576px) {
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/various-sm.png");
+    width: 100%;
+    height: 500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  }
+
 @media (min-width: 768px) {
 
  #about {
@@ -190,33 +218,10 @@
     font-size: 48px;
   }
 
-  .banner {
-    margin-top: 0;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/field.jpg");
-    width: 100%;
-    height: 400px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-  }
   .banner-mpvr {
     display: none;
   }
-  //.banner-mpvr {
-//    padding-top: 150px;
-//    padding-bottom: 50px;
-//    color: #eaeaea;
-//    background-image: url("../img/projects/mpvr/mpvr-banner.jpg");
-//    width: 100%;
-//    height: 300px;
-//    background-position: top;
-//    background-repeat: no-repeat;
-//    background-size: cover;
-//  }
+
   .banner h1 {
     font-size: 50px;
   }
@@ -224,37 +229,20 @@
     font-weight: 300;
     max-width: 700px;
   }
-  .parallax {
-      /* The image used */
-      background-image: url("../img/stars.jpg");
 
-      /* Set a specific height */
-      width: 100%;
-      height: 300px;
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/q-e.jpg");
+    width: 100%;
+    height: 600px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
   }
-  .parallax-2 {
-      /* The image used */
-      background-image: url("../img/mtns.jpg");
-
-      /* Set a specific height */
-      width: 100%;
-      height: 300px;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
-
-}
 
 @media (min-width: 992px) {
   header.masthead {
@@ -268,4 +256,5 @@
     }
 
   }
+
 }

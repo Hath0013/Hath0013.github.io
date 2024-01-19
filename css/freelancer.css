@@ -1,11 +1,11 @@
 body {
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
   font-weight: 300;
 }
 
 .btn-primary {
   font-weight: 600;
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
 }
 
 h1,
@@ -15,7 +15,7 @@ h4,
 h5,
 h6 {
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
 }
 
 hr.star-dark,
@@ -443,7 +443,7 @@ section h2 {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 400;
-  font-family: 'Montserrat';
+  font-family: 'DM Sans';
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -486,7 +486,9 @@ section h2 {
 }
 
 .dropdown-item {
-  font-size: 12px;
+  font-size: 11px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .dropdown-item:hover {
@@ -709,6 +711,34 @@ section h2 {
   background-size: cover;
 }
 
+@media (min-width: 0px) {
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/various-sm.png");
+    width: 100%;
+    height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 576px) {
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/various-sm.png");
+    width: 100%;
+    height: 500px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
 @media (min-width: 768px) {
   #about {
     padding-top: 150px;
@@ -716,19 +746,6 @@ section h2 {
   .banner-h1 {
     font-weight: 300;
     font-size: 48px;
-  }
-  .banner {
-    margin-top: 0;
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/field.jpg");
-    width: 100%;
-    height: 400px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
   }
   .banner-mpvr {
     display: none;
@@ -740,27 +757,14 @@ section h2 {
     font-weight: 300;
     max-width: 700px;
   }
-  .parallax {
-    /* The image used */
-    background-image: url("../img/stars.jpg");
-    /* Set a specific height */
+  .banner-qe {
+    padding-top: 150px;
+    padding-bottom: 50px;
+    color: #eaeaea;
+    background-image: url("../img/euna/q-e.jpg");
     width: 100%;
-    height: 300px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .parallax-2 {
-    /* The image used */
-    background-image: url("../img/mtns.jpg");
-    /* Set a specific height */
-    width: 100%;
-    height: 300px;
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
+    height: 600px;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -1025,6 +1029,10 @@ a:focus, a:hover, a:active {
   color: #868e96;
 }
 
+.fab:hover, .fas:hover {
+  color: #212529;
+}
+
 .btn-gray {
   border: 1px solid #868e96;
 }
@@ -1058,6 +1066,12 @@ a:hover {
 
 .hh {
   padding-top: 20px;
+}
+
+.caption {
+  font-size: 14px;
+  font-style: italic;
+  color: #495057;
 }
 
 @media (min-width: 768px) {
