@@ -18,6 +18,10 @@ h6 {
   font-family: 'DM Sans';
 }
 
+.hhi {
+  width: 10%;
+}
+
 hr.star-dark,
 hr.star-light {
   max-width: 15rem;
@@ -723,6 +727,9 @@ section h2 {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .banner-qe-hide {
+    display: none;
+  }
 }
 
 @media (min-width: 576px) {
@@ -758,15 +765,10 @@ section h2 {
     max-width: 700px;
   }
   .banner-qe {
-    padding-top: 150px;
-    padding-bottom: 50px;
-    color: #eaeaea;
-    background-image: url("../img/euna/q-e.jpg");
-    width: 100%;
-    height: 600px;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
+    display: none;
+  }
+  .banner-qe-hide {
+    display: block;
   }
 }
 
