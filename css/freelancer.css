@@ -114,8 +114,8 @@ section h2 {
 }
 
 .bb {
-  border-bottom: solid 2px #dee2e6;
-  max-width: 735px;
+  border-bottom: solid 1px #868e96;
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -1076,7 +1076,39 @@ a:hover {
   color: #495057;
 }
 
+.ixdf-desktop {
+  display: none;
+}
+
+.ixdf-desktop-about {
+  display: none;
+}
+
+@media (min-width: 475px) {
+  .ixdf-desktop {
+    display: block;
+  }
+  .ixdf-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 475px) {
+  .ixdf-desktop {
+    display: block;
+  }
+  .ixdf-mobile {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
+  .ixdf-mobile-about {
+    display: none;
+  }
+  .ixdf-desktop-about {
+    display: block;
+  }
   .accordion {
     display: none;
   }

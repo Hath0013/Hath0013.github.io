@@ -108,8 +108,44 @@ a:hover {
   color: $gray-700;
 }
 
+.ixdf-desktop {
+  display: none;
+}
+
+.ixdf-desktop-about {
+  display: none;
+}
+
+@media (min-width: 475px) {
+  .ixdf-desktop {
+    display: block;
+  }
+
+  .ixdf-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 475px) {
+  .ixdf-desktop {
+    display: block;
+  }
+
+  .ixdf-mobile {
+    display: none;
+  }
+}
 
 @media (min-width: 768px) {
+
+  .ixdf-mobile-about {
+    display: none;
+  }
+
+  .ixdf-desktop-about {
+    display: block;
+  }
+
   .accordion {
     display: none;
   }
