@@ -20,8 +20,39 @@ h6 {
 }
 // Custom Horizontal Rule with Star Icon
 
+
 .hhi {
   width: 10%;
+}
+
+.scope-list {
+  list-style-type: none;
+  padding-right: 15px;
+  margin-left: -40px;
+  margin-right: -40px;
+}
+.scope-list li {
+  border-bottom: solid 1.25px $gray-600;
+  padding-top: 10px;
+  padding-bottom: 1px;
+  font-size: 26px;
+}
+
+.hhi-border {
+  border: solid 1px #e9ecef;
+}
+
+.project-sub {
+  color: #808080;
+  font-weight: 600;
+  margin-top: -10px;
+  font-size: 15px;
+}
+
+.project-title {
+  font-weight: 600;
+  margin-top: -10px;
+  padding-bottom: 30px;
 }
 
 hr.star-dark,
@@ -123,6 +154,13 @@ section {
 .bb {
   border-bottom: solid 1px $gray-600;
   max-width: 700px;
+  margin: 0 auto;
+}
+
+
+.bb-footer {
+  border-bottom: solid 1px $gray-600;
+  max-width: 1315px;
   margin: 0 auto;
 }
 

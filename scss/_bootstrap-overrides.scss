@@ -11,7 +11,7 @@ a {
 .project {
   transition: transform .2s;
   &:hover {
-    transform: scale(1.05);
+    transform: scale(1.015);
   }
 }
 
@@ -33,6 +33,15 @@ a {
 
 .text-secondary {
   color: $secondary !important;
+}
+
+.connect-links {
+  color: $gray-600 !important;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $gray-900 !important;
+  }
 }
 
 .btn-primary {
