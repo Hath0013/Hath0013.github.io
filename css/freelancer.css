@@ -18,6 +18,10 @@ h6 {
   font-family: 'DM Sans';
 }
 
+.cmg-mobile {
+  display: none;
+}
+
 .hhi {
   width: 10%;
 }
@@ -384,6 +388,9 @@ section h2 {
 }
 
 @media (min-width: 992px) {
+  .cmg-mobile {
+    display: inline;
+  }
   .cards {
     display: none;
   }

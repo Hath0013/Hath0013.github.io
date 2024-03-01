@@ -20,6 +20,9 @@ h6 {
 }
 // Custom Horizontal Rule with Star Icon
 
+.cmg-mobile {
+  display: none;
+}
 
 .hhi {
   width: 10%;
@@ -408,6 +411,9 @@ section {
 }
 @media (min-width: 992px) {
 
+  .cmg-mobile {
+    display: inline;
+  }
 
   .cards {
     display: none;
