@@ -18,7 +18,36 @@ h6 {
   font-family: 'DM Sans';
 }
 
+.btn-about {
+  background-color: #8b008b;
+  color: #efdbef;
+  font-weight: 400;
+  border-radius: 3px;
+}
+
+.btn-about h3 {
+  font-size: 18px;
+}
+
+.btn-about:hover, .btn-about:focus, .btn-about:active {
+  border: solid 1px #ced4da;
+  background-color: #ced4da;
+  color: #212529;
+}
+
 .cmg-mobile {
+  display: none;
+}
+
+.certs-desktop {
+  display: none;
+}
+
+.skills-mobile {
+  display: block;
+}
+
+.skills-desktop {
   display: none;
 }
 
@@ -346,6 +375,18 @@ section h2 {
 }
 
 @media (min-width: 768px) {
+  .certs-desktop {
+    display: block;
+  }
+  .certs-mobile {
+    display: none;
+  }
+  .skills-mobile {
+    display: none;
+  }
+  .skills-desktop {
+    display: block;
+  }
   .pdf {
     display: block;
     margin: 0 auto;
