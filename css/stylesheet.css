@@ -1369,29 +1369,38 @@ h2.accordion-header {
     font-weight: 200;
 }
 
+/* Navbar brand base */
 #mainNav .navbar-brand {
-    background-image: url('../img/brand-block.svg');
-    position: absolute;
-    top: 0;
-    margin-left: 2px!important;
-    width: 52.75px;
-    height: 52.75px;
-}
+  display: block;
+  position: absolute;
+  top: 0;
 
-#mainNav .navbar-brand:hover {
-  background-image: url('../img/brand-block-hover.gif');
-  background-size: 53px 53px;      /* force exact size */
+  width: 52.75px;
+  height: 52.75px;
+  margin-left: 2px !important;
+
+  background-image: url('../img/brand-block.svg');
+  background-size: 53px 53px;
   background-repeat: no-repeat;
   background-position: center;
 
   cursor: pointer;
-  position: absolute;
-  top: 0;
-  margin-left: 2px!important;
-  width: 52.75px;
-  height: 52.75px;
-  transition: all 0.3s ease!important;
 }
+
+
+#mainNav .navbar-brand:hover {
+  background-image: url('../img/brand-block-hover.gif');
+}
+#mainNav::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  background-image: url('../img/brand-block-hover.gif');
+}
+
+
 
 #mainNav .navbar-nav li,
 .navbar-nav li.nav-link.active-link>a,
