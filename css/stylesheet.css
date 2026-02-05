@@ -452,7 +452,7 @@ p, li {
 
 
 
-/* Scroll to Top Button */
+/* Scroll to Top Button 
 .scroll-to-top {
     z-index: 1042;
     right: 1rem;
@@ -466,6 +466,7 @@ p, li {
     background-color: fade-out(#55DFFF, 0.5);
     line-height: 3.1rem;
 }
+*/
 
 a {
     text-decoration: none;
@@ -843,14 +844,15 @@ a:hover {
 
 /* Base tab styling */
 .sticky-tabs .nav-link {
-  font-size: 18px;
+  font-size: 24px;
   color: #e6e1df;
   border: none;
   text-align: left;
-  font-weight: 200;
-  padding: 10px 12px;
+  font-weight: 500;
+  padding: 10px 12px 10px 20px;
   margin: 0; /* remove horizontal spacing */
   border-radius: 0; /* square tabs */
+    position: relative;
 }
 .sticky-tabs .nav-link:hover {
   color: #e6e1df!important;
@@ -859,19 +861,12 @@ a:hover {
 /* Active tab styling */
 .sticky-tabs .nav-link.active {
   color: #e6e1df;
-  font-weight: 700;
   background: transparent;
   box-shadow: none;                  /* remove horizontal shadow */
 }
 /* Dot visible for active tab */
 .sticky-tabs .nav-link.active::before {
   opacity: 1;
-}
-
-/* Ensure positioning context for nav links */
-.sticky-tabs .nav-link {
-  position: relative;
-  padding-left: 1.25em; /* reserve space for the dot */
 }
 
 /* Dot (hidden by default) */
@@ -912,7 +907,7 @@ a:hover {
 /* ----------------------------- */
 
 .nav-tabs-horizontal {
-  border-bottom: 1px solid #585858;
+  border-bottom: 1px solid #b477dc;
   border-right: none;
   display: flex;
   flex-direction: row;
@@ -924,26 +919,32 @@ a:hover {
   color: #fff;
   border: none;
   text-align: center;
-  font-weight: 200;
-  padding: 10px 0;
-  font-size: inherit;
-  margin: 0 25px 0 0;
+  font-weight: 500;
+  padding: 7px 15px 5px 15px;
+  font-size: 24px;
+  margin: 0 15px 0 0;
   border-radius: 0;
   border-bottom: 3px solid transparent; /* bottom marker */
+    display: inline-block;
+  transform: scale(1);
+  transition: transform 200ms ease-in-out;
+  will-change: transform;
 }
 
 /* Active tab */
 .nav-tabs-horizontal .nav-link.active {
-  color: #e6e1df;
-  background-color: #1a1a1a;
-  border-bottom: 3px solid #b477dc;
+    color: #1a1a1a;
+    background-color: #b477dc;
+    padding: 7px 15px 5px 15px;
+    border-radius: 10px 10px 0 0;
+    transform: scale(1);
 }
 
 /* Hover (non-active) */
 .nav-tabs-horizontal .nav-link:hover:not(.active) {
-  color: #e6e1df!important;
-  background-color: #1a1a1a;
-  border-bottom: 3px solid #b477dc;
+  color: #fff !important;
+    transform: scale(1.06);
+  background: transparent;
 }
 
 /* Sticky behavior for horizontal mode */
@@ -1918,12 +1919,6 @@ h1 {
   width: 67.5%;
 }
 
-/*.sticky-tabs li.nav-item.igpro-types-title {
-      border-bottom: 1px solid #585858;
-      padding: 20px 0 6px 0!important;
-      margin-bottom: 10px;
-}*/
-
 
 
 /* -------------------------------------- */
@@ -1960,15 +1955,15 @@ h1 {
   .nav-tabs-horizontal {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid #585858;
+    border-bottom: 1px solid #b477dc;
   }
 
   /* Title above tabs */
   .tab-group-title {
     color: #b477dc;
     font-weight: 400;
-    font-size: 24px;
-    padding: 5px 0 20px 0;
+    font-size: 18px;
+    padding: 15px 0 15px 0;
     pointer-events: none;
   }
 
