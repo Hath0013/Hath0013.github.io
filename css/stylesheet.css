@@ -1798,16 +1798,23 @@ h1 {
 /* Break Points */
 @media only screen and (max-width: 480px) {
   .name-intro {
-    padding-top: 34px;
-    line-height: 53px;
-    font-size: 50px !important;
-    margin-bottom: 10px;
+    padding-top: 9px;
+    line-height: 80px;
+    font-size: 75px !important;
+    margin-bottom: 16px;
   }
   .recent {
     padding-top: 0;
   }
+  .recent .project-sub {
+    padding-bottom: 20px;
+  }
+  .all-work {
+    padding-top: 67px;
+}
+
   #home section {
-    min-height: 285px;
+    min-height: 375px;
   }
   h2.show-desktop {
     font-size: 60px;
@@ -1827,15 +1834,6 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-    .top-grn-check,
-    .blue-minus,
-    .pink-minus,
-    .grn-plus,
-    .blue-plus,
-    .grn-check,
-    .pink-check {
-        display: none;
-    }
     .show-mobile {
         display: none;
     }
