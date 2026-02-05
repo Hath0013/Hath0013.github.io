@@ -549,27 +549,6 @@ a:hover {
 .grid .page-title {
   padding-top: 55px;
 }
-/*
-.grid-bg {
-  min-height: 100vh;
-  background-color: #fffaf8;
-
-  background-image:
-    repeating-linear-gradient(
-      to right,
-      rgba(0,0,0,0.08) 0,
-      rgba(0,0,0,0.08) 0.5px,
-      transparent 0.5px,
-      transparent 53px
-    ),
-    repeating-linear-gradient(
-      to bottom,
-      rgba(0,0,0,0.08) 0,
-      rgba(0,0,0,0.08) 0.5px,
-      transparent 0.5px,
-      transparent 53px
-    );
-}*/
 
 
 
@@ -1818,6 +1797,21 @@ h1 {
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+  .name-intro {
+    padding-top: 34px;
+    line-height: 53px;
+    font-size: 50px !important;
+    margin-bottom: 10px;
+  }
+  .recent {
+    padding-top: 0;
+  }
+  #home section {
+    min-height: 285px;
+  }
+  h2.show-desktop {
+    font-size: 60px;
+  }
   /* Base horizontal tab styling */
   .nav-tabs-horizontal .nav-link {
     color: #fff;
