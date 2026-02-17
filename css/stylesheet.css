@@ -382,6 +382,7 @@ p, li {
     text-decoration: none;
     transition: none;
     padding: 10px;
+    text-wrap: wrap;
 }
 
 .btn:hover {
@@ -1501,6 +1502,7 @@ ul ul a:hover {
     display: none;
     border: 1px solid #000;
     border-radius: 5px;
+    max-width: 100%!important;
 }
 /* Ensure positioning context */
 .dropdown-menu a {
@@ -1616,7 +1618,16 @@ ul ul a:hover {
 
 
 @media (max-width: 992px) {
-
+.dropdown-menu {
+  max-width: 300px!important;
+}
+.dropdown-toggle:hover .dropdown-menu {
+  display: none;
+}
+.navbar-nav,
+.nav-item {
+  text-align: right!important;
+}
   .close-btn-desktop {
     display: none;
   }
@@ -1725,7 +1736,7 @@ ul ul a:hover {
   #mainNav .navbar-toggler {
     margin-left: auto;
     margin-top: -33px;
-    margin-right: 20px;
+    margin-right: 3px;
   }
     .fa-bars {
       font-size: 36px;
@@ -1781,22 +1792,27 @@ h1 {
     max-width: 63%;
 }
 
-
-.vimeo-lg {
-    display: none;
+.vimeo {
+  max-width: 750px;
+  width: 100%;
+  margin: 0 auto;
 }
-
-.vimeo-md {
+  .mpvr-title-mobile {
     display: none;
-}
-
-.vimeo-sm {
+  }
+    .mpvr-title-desktop {
     display: block;
-    margin: 0 auto;
-}
+  }
+
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+  .mpvr-title-mobile {
+    display: block;
+  }
+    .mpvr-title-desktop {
+    display: none;
+  }
   .name-intro {
     padding-top: 9px;
     line-height: 80px;
@@ -1831,27 +1847,58 @@ h1 {
     border-radius: 0;
     border-bottom: 3px solid transparent; /* bottom marker */
   }
+  .nav-tabs-horizontal .nav-item .nav-link {
+    font-size: 12px!important;
+    margin-right: 5px!important;
+  }
+  .nav-tabs-horizontal .nav-link {
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 738px) {
+  .sticky-tabs-horizontal {
+    padding-top: 0!important;
+  }
+  .scope-list li {
+    font-size: 18px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .more-projects .pb-4 {
+    padding-bottom: .5rem!important;
+  }
+  .project-sub {
+    font-size: 14px;
+    line-height: 1.25rem;
+  }
+  .project-title {
+    font-size: 20px;
+  }
+  .nav-tabs-horizontal .nav-link.active,
+  .nav-tabs-horizontal .nav-link {
+    padding: 0px 5px 0px 5px;
+    font-weight: 500;
+    border: 0;
+  }
+    .nav-tabs-horizontal .nav-item .nav-link {
+    font-size: 15px;
+    margin-right: 5px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
+  .grid {
+    width: 100%;
+    background-image: url('../img/banner-mobile.svg');
+    background-size: 53px;
+    background-position: fixed;
+    background-color: #fffaf8;
+}
     .show-mobile {
         display: none;
     }
     .show-desktop {
         display: block;
-    }
-
-    .vimeo-lg {
-        display: none;
-    }
-
-    .vimeo-md {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .vimeo-sm {
-        display: none;
     }
     .avatar {
       max-width: 300px;
@@ -1877,24 +1924,21 @@ h1 {
   .mobile-table {
     display: table!important; /* show mobile version */
   }
+  .dropdown-menu {
+    background: #fffaf8;
+    border: 1px solid #000;
+    border-radius: 5px;
+    max-width: 80%!important;
+    margin-left: auto;
 }
-
-
-@media only screen and (min-width: 1024px) {
-
-    .vimeo-lg {
-        display: block;
-        margin: 0 auto;
-    }
-
-    .vimeo-md {
-        display: none;
-    }
-
-    .vimeo-sm {
-        display: none;
-    }
-
+/* Ensure positioning context */
+.dropdown-menu a {
+  position: relative;
+  padding-left: 1.25em; /* reserve space for the dot */
+}
+.dropdown-menu li {
+  list-style-type: none!important;
+}
 }
 
 
@@ -1945,7 +1989,7 @@ h1 {
   .sticky-tabs-horizontal {
     display: block;
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 20;
     padding-left: 50px;
     padding-right: 50px;
