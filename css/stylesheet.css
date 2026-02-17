@@ -453,7 +453,7 @@ p, li {
 
 
 
-/* Scroll to Top Button 
+/* Scroll to Top Button */
 .scroll-to-top {
     z-index: 1042;
     right: 1rem;
@@ -464,10 +464,14 @@ p, li {
 .scroll-to-top a {
     width: 3.5rem;
     height: 3.5rem;
-    background-color: fade-out(#55DFFF, 0.5);
+    background-color: #c42f22;
     line-height: 3.1rem;
+    border-radius: 100px!important;
 }
-*/
+.scroll-to-top a i {
+  color: #fff;
+}
+
 
 a {
     text-decoration: none;
