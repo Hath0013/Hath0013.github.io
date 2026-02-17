@@ -1810,7 +1810,7 @@ h1 {
 /* Break Points */
 @media only screen and (max-width: 480px) {
   .grid .page-title {
-    padding-top: 10px;
+    padding-top: 11px;
   }
   .mpvr-title-mobile {
     display: block;
@@ -1837,7 +1837,7 @@ h1 {
     min-height: 375px;
   }
   h2.show-desktop {
-    font-size: 60px;
+    font-size: 50px;
   }
   /* Base horizontal tab styling */
   .nav-tabs-horizontal .nav-link {
@@ -1867,6 +1867,9 @@ h1 {
   }
 }
 @media only screen and (max-width: 738px) {
+    .igloo {
+    padding-top: 1rem;
+  }
   .sticky-tabs-horizontal {
     padding-top: 0!important;
   }
