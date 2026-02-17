@@ -1833,7 +1833,6 @@ h1 {
   .all-work {
     padding-top: 67px;
 }
-
   #home section {
     min-height: 375px;
   }
@@ -1858,6 +1857,13 @@ h1 {
   }
   .nav-tabs-horizontal .nav-link {
     font-weight: 500;
+  }
+  #mainNav .navbar-nav li,
+  .linkedin i {
+    font-size: 26px;
+  }
+  .dropdown-item {
+    line-height: 0!important;
   }
 }
 @media only screen and (max-width: 738px) {
