@@ -169,7 +169,7 @@ p, li {
         padding: 50px 70px;
         border: 1px solid #1a1a1a;
         border-radius: 10px;
-        background-color: #f8f1fc;
+        background-color: #f6f1fa;
     }
     .recent-work h1 {
         font-size: 90px;
@@ -1624,17 +1624,12 @@ ul ul a:hover {
 .dropdown-toggle:hover .dropdown-menu {
   display: none;
 }
-.navbar-nav,
-.nav-item {
-  text-align: right!important;
-}
   .close-btn-desktop {
     display: none;
   }
   .close-btn-mobile {
     display: block!important;
   }
-
   /* Make table rows block-level to stack cells */
 .desktop-table .tab-content table,
 .desktop-table .tab-content tbody,
@@ -1755,8 +1750,11 @@ ul ul a:hover {
 .top-grn-check {
     display: none!important;
     }
-    .navbar-nav li.nav-item {
+    .navbar-nav li.nav-item:not(.nav-item .text-right) {
         text-align: left;
+    }
+    .li-spacing {
+      margin-right: 20px!important;
     }
     .show-992 {
         display: block;
@@ -1918,6 +1916,9 @@ h1 {
 
 /* When screen width is less than 992px */
 @media (max-width: 992px) {
+  .dropdown-toggle {
+  display: none!important;
+}
   .desktop-table {
     display: none!important;  /* hide desktop version */
   }
