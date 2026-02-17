@@ -1809,6 +1809,9 @@ h1 {
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+  .grid .page-title {
+    padding-top: 10px;
+  }
   .mpvr-title-mobile {
     display: block;
   }
