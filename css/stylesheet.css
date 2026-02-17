@@ -1498,7 +1498,7 @@ ul ul a:hover {
 
 
 .dropdown-menu {
-    background: #fffaf8;
+    background: #fbf2f2;
     display: none;
     border: 1px solid #000;
     border-radius: 5px;
@@ -1926,19 +1926,8 @@ h1 {
     display: table!important; /* show mobile version */
   }
   .dropdown-menu {
-    background: #fffaf8;
-    border: 1px solid #000;
-    border-radius: 5px;
     max-width: 80%!important;
     margin-left: auto;
-}
-/* Ensure positioning context */
-.dropdown-menu a {
-  position: relative;
-  padding-left: 1.25em; /* reserve space for the dot */
-}
-.dropdown-menu li {
-  list-style-type: none!important;
 }
 }
 
