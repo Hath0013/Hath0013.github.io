@@ -1681,6 +1681,9 @@ ul ul a:hover {
 
 /* show content 992px and above */
 @media(min-width:992px) {
+    .desktop-legend {
+    display: block;
+  }
   #home #mainNav,
   #about #mainNav {
       padding-top: 22px;
