@@ -1821,6 +1821,9 @@ h1 {
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+  #mainNav .navbar-nav li > a {
+    font-size: 20px;
+  }
   .dropdown-menu {
     margin-left: auto;
     min-width: 100%!important;
