@@ -456,21 +456,21 @@ p, li {
 /* Scroll to Top Button */
 .scroll-to-top {
     z-index: 1042;
-    right: 1rem;
-    bottom: 1rem;
-    display: none;
+    right: 20px;
+    bottom: 15px;
 }
 
 .scroll-to-top a {
-    width: 3.5rem;
-    height: 3.5rem;
+    width:40px!important;
+    height:40px!important;
     background-color: #c42f22;
-    line-height: 3.1rem;
+    line-height: 2.5rem;
     border-radius: 100px!important;
 }
 .scroll-to-top a i {
   color: #fff;
 }
+
 
 
 a {
@@ -960,6 +960,9 @@ a:hover {
     font-size: 24px;
     font-weight: 500;
 }
+.scope-list li:last-child {
+    border-bottom: 0!important;
+}
 
 .hhi-border {
     border: solid 1px #e9ecef;
@@ -1128,6 +1131,14 @@ a:hover {
 
 
 /*Resume Page */
+.paper-label {
+  border: solid 1px #1a1a1a;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+  padding: 40px;
+  margin-left: 0!important;
+  background-image: url('../img/paper-texture.jpg');
+}
 .label {
   border: solid 1px #1a1a1a;
   border-radius: 10px;
@@ -1143,6 +1154,7 @@ a:hover {
   border-radius: 10px;
   margin-bottom: 1rem;
   margin-top: 1rem;
+
 }
 .work-xp h4 {
   line-height: 26px;
@@ -1622,9 +1634,6 @@ ul ul a:hover {
 
 
 @media (max-width: 992px) {
-.dropdown-menu {
-  max-width: 300px!important;
-}
 .dropdown-toggle:hover .dropdown-menu {
   display: none;
 }
@@ -1812,6 +1821,21 @@ h1 {
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+  .dropdown-menu {
+    margin-left: auto;
+    min-width: 100%!important;
+  }
+.scroll-to-top {
+    right: 20px;
+    bottom: 15px;
+}
+.scroll-to-top a {
+    width:40px!important;
+    height:40px!important;
+    background-color: #c42f22;
+    line-height: 2.5rem;
+    border-radius: 100px!important;
+}
   .grid .page-title {
     padding-top: 11px;
   }
@@ -1870,7 +1894,7 @@ h1 {
   }
 }
 @media only screen and (max-width: 738px) {
-    .igloo {
+  .igloo {
     padding-top: 1rem;
   }
   .sticky-tabs-horizontal {
@@ -1945,9 +1969,9 @@ h1 {
     display: table!important; /* show mobile version */
   }
   .dropdown-menu {
-    max-width: 80%!important;
     margin-left: auto;
-}
+    min-width: 50%;
+  }
 }
 
 
