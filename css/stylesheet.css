@@ -1824,6 +1824,9 @@ h1 {
   #mainNav .navbar-nav li > a {
     font-size: 20px;
   }
+    #mainNav .navbar-nav li > a:not(#mainNav .navbar-nav li.drop-menu-active > a) {
+    font-weight: 300;
+  }
   .dropdown-menu {
     margin-left: auto;
     min-width: 100%!important;
