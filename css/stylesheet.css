@@ -1820,6 +1820,9 @@ h1 {
 
 /* Break Points */
 @media only screen and (max-width: 480px) {
+#mainNav .navbar-brand:hover {
+  background-image: url('../img/brand-block.svg');
+}
   #mainNav {
     padding-bottom: 0!important;
   }
@@ -1849,7 +1852,7 @@ h1 {
     border-radius: 100px!important;
 }
   .grid .page-title {
-    padding-top: 11px;
+    padding-top: 35px;
   }
   .mpvr-title-mobile {
     display: block;
@@ -1858,7 +1861,7 @@ h1 {
     display: none;
   }
   .name-intro {
-    padding-top: 9px;
+    padding-top: 25px;
     line-height: 80px;
     font-size: 75px !important;
     margin-bottom: 16px;
