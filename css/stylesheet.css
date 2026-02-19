@@ -716,8 +716,7 @@ a:hover {
 }
 
 .lightbox-trigger:hover {
-   transform: scale(1.01);
-   opacity: .9;
+  cursor: pointer;
    /*cursor: url("../img/pointer.png") 16 16, pointer !important;*/
 
 }
@@ -1826,6 +1825,10 @@ h1 {
   }
   #mainNav .navbar-nav li > a {
     font-size: 20px;
+  }
+  #mainNav .navbar-nav li:hover,
+  #mainNav .navbar-nav li a:hover {
+    cursor: pointer;
   }
     #mainNav .navbar-nav li > a:not(#mainNav .navbar-nav li.drop-menu-active > a) {
     font-weight: 300;
