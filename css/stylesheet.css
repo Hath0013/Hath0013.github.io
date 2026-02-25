@@ -1146,7 +1146,7 @@ a:hover {
 }
 
 /*Blog page*/
-#blog .blog-post a {
+#blog .blog-post a, {
   display: inline-block;
   text-decoration: underline;
   transition: all .2s;
@@ -1154,12 +1154,13 @@ a:hover {
 }
 #blog .blog-post a:hover {
   color: #d92d26;
-  transform: scale(1.008);
 }
+.evergreen a
 .link-list-title {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: .5rem;
+  padding-top: 1rem;
 }
 .link-list {
   list-style: none;
@@ -1170,6 +1171,7 @@ a:hover {
   padding-left: 1em;
   margin-bottom: 0.4em;
   line-height: 1.75rem;
+  font-size: 16px;
 }
 .link-list li::before {
   content: "\f0c1";              /* Font Awesome link icon */
@@ -1180,6 +1182,14 @@ a:hover {
   left: 0;
   top: 0;
   color: #d92d26;
+}
+.back-to-top {
+  font-size: 14px;
+}
+.article-summary {
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.75rem;
 }
 .blog-intro {
   padding: 100px 0 25px 0;
@@ -1214,7 +1224,7 @@ a:hover {
 }
 .blog-about p {
   font-size: 1.025rem;
-  line-height: 1.75rem ;
+  line-height: 1.75rem;
 }
 .blog-about img:first-of-type {
   max-width: 13%;
@@ -1236,6 +1246,10 @@ a:hover {
 }
 .active-archive a {
   font-weight: 600;
+}
+.active-archive a:hover,
+.evergreen a:hover {
+  color: #d92d26;
 }
 
 
