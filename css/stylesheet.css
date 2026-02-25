@@ -1168,7 +1168,7 @@ a:hover {
 }
 .link-list li {
   position: relative;
-  padding-left: 1em;
+  padding-left: 1.25rem;
   margin-bottom: 0.4em;
   line-height: 1.75rem;
   font-size: 16px;
