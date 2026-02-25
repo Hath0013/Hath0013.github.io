@@ -198,21 +198,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const container = document.getElementById("blog-content");
 
-  // ALL archive links (Evergreen + Archives) for click handling
+  // ALL archive links (Evergreen + Archives)
   const allLinks = document.querySelectorAll("[data-archive]");
 
-  // ONLY monthly archives (exclude Evergreen) for default loading
+  // ONLY monthly archives for default load
   const archiveLinks = document.querySelectorAll(
     ".archives-list:not(.evergreen) [data-archive]"
   );
 
   async function loadArchive(path, linkElement) {
+    if (!path) return; // safety guard
+
     try {
       container.style.opacity = 0.4;
 
       const response = await fetch(path);
 
-      // prevent injecting 404 page
       if (!response.ok) {
         throw new Error("Archive not found: " + path);
       }
@@ -220,7 +221,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const html = await response.text();
       container.innerHTML = html;
 
-      // update active state across BOTH lists
+      // update active state
       document.querySelectorAll(".archives-list li")
         .forEach(li => li.classList.remove("active-archive"));
 
@@ -231,31 +232,44 @@ document.addEventListener("DOMContentLoaded", function () {
       container.style.opacity = 1;
 
     } catch (err) {
-      container.innerHTML = "<p>Archive could not be loaded.</p>";
-      container.style.opacity = 1;
       console.error(err);
+      // IMPORTANT: don't wipe existing content on unrelated hash clicks
+      if (!container.innerHTML.trim()) {
+        container.innerHTML = "<p>Archive could not be loaded.</p>";
+      }
+      container.style.opacity = 1;
     }
   }
 
-  // 1️⃣ Click handler (Evergreen + Archives)
+  // Click handler ONLY for archive links
   allLinks.forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
-      loadArchive(this.dataset.archive, this);
-      history.pushState(null, "", this.getAttribute("href"));
+
+      const path = this.dataset.archive;
+      if (!path) return;
+
+      loadArchive(path, this);
+
+      // update URL hash safely
+      const hash = this.getAttribute("href");
+      if (hash) {
+        history.pushState({ archive: path }, "", hash);
+      }
     });
   });
 
-  // 2️⃣ Initial load
+  // Initial load
   let initialLink = null;
 
-  // If URL has hash, load matching link (Evergreen allowed)
-  const hash = location.hash.replace("#", "");
+  const hash = location.hash;
   if (hash) {
-    initialLink = document.querySelector(`[href="#${hash}"]`);
+    const candidate = document.querySelector(`[href="${hash}"][data-archive]`);
+    if (candidate) {
+      initialLink = candidate;
+    }
   }
 
-  // Otherwise load first MONTHLY archive only
   if (!initialLink && archiveLinks.length > 0) {
     initialLink = archiveLinks[0];
   }
@@ -264,13 +278,16 @@ document.addEventListener("DOMContentLoaded", function () {
     loadArchive(initialLink.dataset.archive, initialLink);
   }
 
-  // 3️⃣ Back/forward navigation
+  // Back/forward navigation — ONLY load if hash belongs to archive link
   window.addEventListener("popstate", function() {
-    const hash = location.hash.replace("#", "");
-    const link = document.querySelector(`[href="#${hash}"]`);
+    const hash = location.hash;
+    if (!hash) return;
+
+    const link = document.querySelector(`[href="${hash}"][data-archive]`);
     if (link) {
       loadArchive(link.dataset.archive, link);
     }
+    // otherwise ignore (back-to-top, anchors, etc.)
   });
 
 });
