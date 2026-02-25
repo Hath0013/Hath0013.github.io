@@ -1250,6 +1250,33 @@ a:hover {
 .active-archive a {
   font-weight: 600;
 }
+
+.active-archive {
+  position: relative;
+  list-style: none; /* removes default bullet if present */
+}
+
+.archives-list > li.active-archive:has(a) {
+  position: relative;
+  padding-left: 22px;
+  list-style: none;
+}
+
+.archives-list > li.active-archive:has(a)::before {
+  content: "\f0f4";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: #d92d26;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.archives-list > li.active-archive a {
+  font-weight: 600;
+  margin-left: 3px;
+}
 .active-archive a:hover,
 .curated a:hover {
   color: #d92d26;
