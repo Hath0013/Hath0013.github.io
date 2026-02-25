@@ -70,6 +70,15 @@ p, li {
 .font-300 {
   font-weight: 300;
 }
+.font-400 {
+  font-weight: 400;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-teal {
+  color: #2f4858;
+}
 .border-bottom-1 {
   border-bottom: 1px solid #000;
 }
@@ -1022,11 +1031,6 @@ a:hover {
     font-style: italic;
     color: #1a1a1a;
 }
-.blog-caption {
-    font-size: 14px;
-    color: #2a2b2a;
-    margin-bottom: 0;
-}
 
 
 /* Project Background Image hovers */
@@ -1142,6 +1146,41 @@ a:hover {
 }
 
 /*Blog page*/
+#blog .blog-post a {
+  display: inline-block;
+  text-decoration: underline;
+  transition: all .2s;
+  font-weight: 300;
+}
+#blog .blog-post a:hover {
+  color: #d92d26;
+  transform: scale(1.008);
+}
+.link-list-title {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: .5rem;
+}
+.link-list {
+  list-style: none;
+  padding-left: 0;
+}
+.link-list li {
+  position: relative;
+  padding-left: 1em;
+  margin-bottom: 0.4em;
+  line-height: 1.75rem;
+}
+.link-list li::before {
+  content: "\f0c1";              /* Font Awesome link icon */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;              /* required for solid icons */
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #d92d26;
+}
 .blog-intro {
   padding: 100px 0 25px 0;
   font-family: "Playfair Display", serif;
@@ -1182,6 +1221,21 @@ a:hover {
 }
 .blog-about img:nth-of-type(2) {
   max-width: 10%;
+}
+.blog-caption {
+    font-size: 14px;
+    color: #2a2b2a;
+    margin-bottom: 0;
+}
+.archives-list li {
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+.archives-list a {
+  font-weight: 300;
+}
+.active-archive a {
+  font-weight: 600;
 }
 
 

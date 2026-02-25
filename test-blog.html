@@ -114,7 +114,7 @@
       </div>
     </section>
       <div class="row pt-3">
-        <div class="col-md-12 col-lg-8 pb-5 mb-5">
+        <div class="col-md-12 col-lg-8 pb-5 mb-5" id="blog-content">
           <!-- BLOG POST 1: FEB 2026 -->
           <article class="blog-post">
             <img class="blog-card-image img-fluid" src="blog/posts/feb-2026/feb-2026-1.jpg" alt="The History of Graphic Design. 45th Ed. by Jens Müller.">
@@ -127,7 +127,6 @@
               <ul class="link-list">
                 <li><a href="https://www.stills.com/articles/design-trend-report-2026/" target="_blank">Stills: The Design Trend Report 2026</a></li>
                 <li><a href="https://uxdesign.cc/when-design-stops-asking-why-and-starts-asking-can-ai-do-it-625c9a5d9c68" target="_blank">Medium: <em>When design stops asking why and starts asking, “Can AI do it?”</em></a></li>
-                <li><a href="https://www.nngroup.com/articles/state-of-ux-2026/" target="_blank">NN/G: <em>State of UX 2026: Design Deeper to Differentiate</em></a></li>
               </ul>
             </p>
             <br>
@@ -158,16 +157,16 @@
               <hr>
               <p style="font-style: italic;">
                 A space to be human, to be organic and messy and curious, a space to put personality before perfection.</p>
-                <img src="blog/img/peace.svg" class="img-fluid" alt="peace sign hand illustration">
-                <img src="blog/img/han.svg" class="img-fluid" alt="han">
+                <img src="blog/img/peace.svg" class="img-fluid" alt="Image 1">
+                <img src="blog/img/han.svg" class="img-fluid" alt="Image 1">
             </div>
-            <!--<div class="p-4">
+            <div class="p-4">
               <h4 class="font-teal font-500">Archives</h4>
               <hr class="mt-0 pt-0">
               <ol class="list-unstyled mb-0 archives-list">
                 <li class="active-archive"><a href="#feb-2026" data-archive="/blog/archives/feb-2026.html">Feb 2026</a></li>
               </ol>
-            </div>-->
+            </div>
           </div>
         </div>
       </div>
@@ -207,5 +206,70 @@
       src="../assets/dist/js/bootstrap.bundle.min.js"
       class="astro-vvvwv3sm"
     ></script>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  const container = document.getElementById("blog-content");
+  const links = document.querySelectorAll("[data-archive]");
+
+  async function loadArchive(path, linkElement) {
+    try {
+      container.style.opacity = 0.4; // optional fade feedback
+
+      const response = await fetch(path);
+      const html = await response.text();
+
+      container.innerHTML = html;
+
+      // update active state
+      document.querySelectorAll(".archives-list li")
+        .forEach(li => li.classList.remove("active-archive"));
+
+      linkElement.parentElement.classList.add("active-archive");
+
+      container.style.opacity = 1;
+
+    } catch (err) {
+      container.innerHTML = "<p>Failed to load archive.</p>";
+      console.error(err);
+    }
+  }
+
+  // 1️⃣ Click handler for archive links
+  links.forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      loadArchive(this.dataset.archive, this);
+      history.pushState(null, "", this.getAttribute("href"));
+    });
+  });
+
+  // 2️⃣ Load initial archive on page load
+  let initialLink;
+
+  // If URL has hash (#mar-2026), use that archive
+  const hash = location.hash.replace("#","");
+  if(hash){
+    initialLink = document.querySelector(`[href="#${hash}"]`);
+  }
+
+  // Otherwise, use the first link in the list (most recent)
+  if(!initialLink) {
+    initialLink = links[0];
+  }
+
+  if(initialLink) {
+    loadArchive(initialLink.dataset.archive, initialLink);
+  }
+
+  // 3️⃣ Handle back/forward buttons
+  window.addEventListener("popstate", function() {
+    const hash = location.hash.replace("#","");
+    const link = document.querySelector(`[href="#${hash}"]`);
+    if(link) loadArchive(link.dataset.archive, link);
+  });
+
+});
+</script>
   </body>
 </html>
