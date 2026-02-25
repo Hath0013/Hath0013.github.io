@@ -141,17 +141,24 @@
                 <img src="blog/img/han.svg" class="img-fluid" alt="Image 1">
             </div>
             <div class="pb-4 pt-2">
-              <h4 class="font-teal font-500">Evergreen</h4>
+              <h4 class="font-teal font-500">Recent</h4>
               <hr class="mt-0 pt-0">
-              <ol class="list-unstyled mb-0 archives-list evergreen">
-                <li>🎨 <a href="#fave-resources" data-archive="/blog/archives/fave-resources.html">Fave design resources!</a></li>
+              <ol class="list-unstyled mb-0 archives-list">
+                <li class="active-archive"><a href="#feb-2026" data-archive="/blog/archives/feb-2026.html">Feb 2026</a></li>
+              </ol>
+            </div>
+            <div class="pb-4 pt-2">
+              <h4 class="font-teal font-500">Curated</h4>
+              <hr class="mt-0 pt-0">
+              <ol class="list-unstyled mb-0 archives-list curated">
+                <li><a href="#fave-resources" data-archive="/blog/archives/fave-resources.html">Favourite design resources 🎨</a></li>
               </ol>
             </div>
             <div class="pb-5">
               <h4 class="font-teal font-500">Archives</h4>
               <hr class="mt-0 pt-0">
               <ol class="list-unstyled mb-0 archives-list">
-                <li class="active-archive"><a href="#feb-2026" data-archive="/blog/archives/feb-2026.html">Feb 2026</a></li>
+                <li class="active-archive">There's nothing here yet.</li>
               </ol>
             </div>
           </div>
@@ -198,12 +205,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const container = document.getElementById("blog-content");
 
-  // ALL archive links (Evergreen + Archives)
+  // ALL archive links (Curated + Archives)
   const allLinks = document.querySelectorAll("[data-archive]");
 
   // ONLY monthly archives for default load
   const archiveLinks = document.querySelectorAll(
-    ".archives-list:not(.evergreen) [data-archive]"
+    ".archives-list:not(.curated) [data-archive]"
   );
 
   async function loadArchive(path, linkElement) {

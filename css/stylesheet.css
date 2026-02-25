@@ -1155,7 +1155,7 @@ a:hover {
 #blog .blog-post a:hover {
   color: #d92d26;
 }
-.evergreen a,
+.curated a,
 .link-list-title {
   font-size: 18px;
   font-weight: 400;
@@ -1248,7 +1248,7 @@ a:hover {
   font-weight: 600;
 }
 .active-archive a:hover,
-.evergreen a:hover {
+.curated a:hover {
   color: #d92d26;
 }
 
