@@ -67,6 +67,10 @@ p, li {
   font-weight: 200;
 }
 
+.font-300 {
+  font-weight: 300;
+}
+
 .heading-comma {
   font-family: "Oswald", sans-serif;
 }
@@ -578,14 +582,6 @@ a:hover {
 .bg-tan {
   background-color: #f7f4ed;
 }
-.bg-mocha {
-  background: #d0d7d0;
-  padding-top: 1rem;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-}
 
 
 .bg-pink-grad {
@@ -1023,6 +1019,11 @@ a:hover {
     font-style: italic;
     color: #1a1a1a;
 }
+.blog-caption {
+    font-size: 14px;
+    color: #2a2b2a;
+    margin-bottom: 0;
+}
 
 
 /* Project Background Image hovers */
@@ -1146,6 +1147,7 @@ a:hover {
   font-style: normal;
   font-size: 7rem!important;
   line-height: 8rem;
+  color: #2f4858;
 }
 .ampersand {
   font-family: "Old Standard TT", serif;
@@ -1156,25 +1158,68 @@ a:hover {
   width: 60px;
   border-top: 5px solid #d92d26;
 }
-.has-dropcap:first-letter {
-  font-family: "DM Sans", Arial, serif;
-  float: left;
-  font-size: 4.5rem;
-  line-height: 0.65;
-  margin: 0.1em 0.1em 0.2em 0;
+.blog-about {
+  background: #d0d7d0;
+  padding-top: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.blog-about h4 {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
   font-weight: 500;
+  color: #2f4858;
+}
+.blog-about p {
+  font-size: 1.025rem;
+  line-height: 1.75rem ;
+}
+.blog-about img:first-of-type {
+  max-width: 13%;
+}
+.blog-about img:nth-of-type(2) {
+  max-width: 10%;
 }
 
+
+/* Base card styling */
+.blog-card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+/* Image styling */
+.blog-card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.blog-card:hover .blog-card-image {
+    transform: scale(1.05);
+}
+
+.has-dropcap:first-letter {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  float: left;
+  font-size: 4rem;
+  line-height: 0.65;
+  margin: 0.15em 0.1em 0.2em 0;
+  font-weight: 500;
+  color: #668083!important;
+  font-weight: 600;
+}
 .dropcap {
   font-family: "DM Sans", Arial, serif;
   background: #483058;
-  color: #483058!important;
   float: left;
-  font-size: 4rem;
-  line-height: 1;
   margin: 0.1em 0.1em 0.2em 0;
   padding: 0.1em;
-  font-weight: 500;
 }
 .dropcap:before,
 .dropcap:after {
@@ -1187,6 +1232,29 @@ a:hover {
 .dropcap:after {
   margin-bottom: -0.15em;
 }
+.blog {
+    border: solid 1px #1a1a1a;
+    margin-bottom: -10px;
+    transition: all .2s ease;
+    margin-bottom: .6rem;
+}
+  .blog-title {
+    padding: 1rem 0!important;
+    font-size: 48px;
+  }
+  .blog-post-meta {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+    padding-top: .5rem;
+    color: #929792;
+    padding-bottom: 1rem;
+}
+
+
+
 
 
 /*Resume Page */
@@ -1569,6 +1637,30 @@ ul ul a:hover {
     color: #000;
 }
 
+.blog-link {
+  position: relative;
+  display: inline-block;
+}
+
+.new-pill {
+  position: absolute;
+  top: -2px;              /* adjust height above the word */
+  left: 0%;
+
+  transform: translateX(-50%) rotate(-12deg);
+
+  display: inline-block;
+  margin-left: 0;
+  padding: 3px 4px;
+  font-size: 8px;
+  font-weight: 500;
+  color: #fff;
+  background-color: #d92d26;
+  border-radius: 999px;
+  line-height: 1;
+  vertical-align: middle;
+  white-space: nowrap;
+}
 
 
 .dropdown-menu {
@@ -1748,6 +1840,9 @@ ul ul a:hover {
 
 /* show content 992px and above */
 @media(min-width:992px) {
+    .new-pill-mobile {
+      display: none;
+    }
     .desktop-legend {
     display: block;
   }
@@ -2046,6 +2141,22 @@ h1 {
     margin-left: auto;
     min-width: 50%;
   }
+  .new-pill {
+    display: none;
+  }
+  .new-pill-mobile {
+      margin-top: -10px;
+      margin-right: 5px;
+      padding: 3px 6px;
+      font-size: 9px;
+      font-weight: 500;
+      color: #fff;
+      background-color: #d92d26;
+      border-radius: 999px;
+      line-height: 1;
+      vertical-align: middle;
+      white-space: nowrap;
+}
 }
 
 

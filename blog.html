@@ -86,7 +86,9 @@
               <a class="nav-link js-scroll-trigger" href="resume.html">Resume</a>
             </li>
             <li class="nav-item text-right">
-              <a class="nav-link js-scroll-trigger active-link" href="blog.html">Blog</a>
+              <a class="nav-link js-scroll-trigger active-link blog-link" href="blog.html">
+                <span class="new-pill-mobile">New!</span>Blog <span class="new-pill">New!</span>
+              </a>
             </li>
             <li class="linkedin li-spacing text-right">
               <a href="https://www.linkedin.com/in/hannahhatherell/" target="_Igloo">
@@ -104,35 +106,25 @@
 <body>
 
     <main class="container">
-    <section class="pb-3">
+    <section class="pb-4">
     <div>
-      <h1 class="blog-intro">Snippets, <br>sparks <span class="ampersand">&</span> pixels.</h1>
+      <h1 class="blog-intro">Snippets, <br>snaps <span class="ampersand">&</span> pixels.</h1>
       <div class="short-stroke"></div>
       </div>
     </section>
       <div class="row g-5 pt-3">
-        <div class="col-md-8">
+        <div class="col-md-12 col-lg-8 pb-5 mb-5">
           <article class="blog-post">
-            <h2 class="display-5 link-body-emphasis mb-1">Sample blog post</h2>
-            <p class="blog-post-meta">
-              January 1, 2021
-            </p>
+            <img class="blog-card-image img-fluid" src="blog/posts/feb-2026/feb-2026-1.jpg" alt="The History of Graphic Design. 45th Ed. by Jens Müller.">
+            <p class="blog-caption"><em>The History of Graphic Design. 45th Ed.</em> by Jens Müller.</p>
+            <h2 class="link-body-emphasis mb-1 blog-title">New inspo material has arrived ✨</h2>
+            <p class="blog-post-meta">Feb 21, 2026</p>
             <p class="has-dropcap">
-              This blog post shows a few different types of content that’s
-              supported and styled with Bootstrap. Basic typography, lists,
-              tables, images, code, and more are all supported as expected.
+              Looking forward to sinking my teeth (or maybe eyeballs?) into this one, not just for the refresher benefits, but the fresh perspective since last studying art & design movements in depth. While I've embraced AI in my workflows and continue to identify appropriate use cases for it, we cannot ignore its oversaturation in just about <span class="font-300">all the things</span> right now, and as a result I'm making a habit of returning to roots.
             </p>
-            <hr />
-            <p>
-              This is some additional paragraph placeholder content. It has been
-              written to fill the available space and show how a longer snippet
-              of text affects the surrounding content. We'll repeat it often to
-              keep the demonstration flowing, so be on the lookout for this
-              exact same string of text.
-            </p>
-            <div>
-              <img src="img/pixels/milk-full.svg" class="img-fluid roundedcorners w-25  " alt="Image 1">
-            </div>
+            <br>
+            <hr>
+
 
             <!-- 2 images side by side
             <div class="container py-4 px-0">
@@ -145,19 +137,19 @@
               </div>
             </div>
           </div>-->
-        <div id="isso-thread"></div>
+
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-12 col-lg-4">
           <div class="position-sticky" style="top: 2rem">
-            <div class="p-4 mb-3 bg-body-tertiary rounded bg-mocha">
-              <h4 class="fst-italic">About</h4>
-              <p>
-                Let's drink some milk and eat some cookies.
-              </p>
-              <div>
-                <img src="img/blog/coffee-1.png" class="img-fluid roundedcorners w-25  " alt="Image 1">
-            </div>
+            <div class="p-4 mb-3 blog-about">
+              <h4>About</h4>
+                <p><span style="font-weight: 300;">Hello friend! </span><img src="blog/img/blob-wave.gif" style="max-width: 30px; margin-top: -10px;" class="img-fluid" alt="Image 1"><br>This space is currently in its seedling stage. Return often to watch it grow.</p>
+              <hr>
+              <p style="font-style: italic;">
+                A space to be human, to be organic and messy and curious, a space to put personality before perfection.</p>
+                <img src="blog/img/peace.svg" class="img-fluid" alt="Image 1">
+                <img src="blog/img/han.svg" class="img-fluid" alt="Image 1">
             </div>
           </div>
         </div>
@@ -168,6 +160,31 @@
     <small>© Built by Hannah Hatherell and Hosted on Github <i class="fab fa-github"></i></small>
   </div>
 </footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-to-top d-lg-none position-fixed ">
+  <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+  <!-- Custom scripts -->
+  <script src="js/freelancer.min.js"></script>
+
+  <!-- Animation script -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 <script src="https://your-isso-instance/js/embed.min.js"></script>
     <script
       src="../assets/dist/js/bootstrap.bundle.min.js"
