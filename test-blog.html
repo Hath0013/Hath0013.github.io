@@ -193,37 +193,52 @@
       src="../assets/dist/js/bootstrap.bundle.min.js"
       class="astro-vvvwv3sm"
     ></script>
-    <script>
+<script>
 document.addEventListener("DOMContentLoaded", function () {
 
   const container = document.getElementById("blog-content");
-  const links = document.querySelectorAll("[data-archive]");
+
+  // ALL archive links (Evergreen + Archives) for click handling
+  const allLinks = document.querySelectorAll("[data-archive]");
+
+  // ONLY monthly archives (exclude Evergreen) for default loading
+  const archiveLinks = document.querySelectorAll(
+    ".archives-list:not(.evergreen) [data-archive]"
+  );
 
   async function loadArchive(path, linkElement) {
     try {
-      container.style.opacity = 0.4; // optional fade feedback
+      container.style.opacity = 0.4;
 
       const response = await fetch(path);
-      const html = await response.text();
 
+      // prevent injecting 404 page
+      if (!response.ok) {
+        throw new Error("Archive not found: " + path);
+      }
+
+      const html = await response.text();
       container.innerHTML = html;
 
-      // update active state
+      // update active state across BOTH lists
       document.querySelectorAll(".archives-list li")
         .forEach(li => li.classList.remove("active-archive"));
 
-      linkElement.parentElement.classList.add("active-archive");
+      if (linkElement && linkElement.parentElement) {
+        linkElement.parentElement.classList.add("active-archive");
+      }
 
       container.style.opacity = 1;
 
     } catch (err) {
-      container.innerHTML = "<p>Failed to load archive.</p>";
+      container.innerHTML = "<p>Archive could not be loaded.</p>";
+      container.style.opacity = 1;
       console.error(err);
     }
   }
 
-  // 1️⃣ Click handler for archive links
-  links.forEach(link => {
+  // 1️⃣ Click handler (Evergreen + Archives)
+  allLinks.forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
       loadArchive(this.dataset.archive, this);
@@ -231,29 +246,31 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 2️⃣ Load initial archive on page load
-  let initialLink;
+  // 2️⃣ Initial load
+  let initialLink = null;
 
-  // If URL has hash (#mar-2026), use that archive
-  const hash = location.hash.replace("#","");
-  if(hash){
+  // If URL has hash, load matching link (Evergreen allowed)
+  const hash = location.hash.replace("#", "");
+  if (hash) {
     initialLink = document.querySelector(`[href="#${hash}"]`);
   }
 
-  // Otherwise, use the first link in the list (most recent)
-  if(!initialLink) {
-    initialLink = links[0];
+  // Otherwise load first MONTHLY archive only
+  if (!initialLink && archiveLinks.length > 0) {
+    initialLink = archiveLinks[0];
   }
 
-  if(initialLink) {
+  if (initialLink) {
     loadArchive(initialLink.dataset.archive, initialLink);
   }
 
-  // 3️⃣ Handle back/forward buttons
+  // 3️⃣ Back/forward navigation
   window.addEventListener("popstate", function() {
-    const hash = location.hash.replace("#","");
+    const hash = location.hash.replace("#", "");
     const link = document.querySelector(`[href="#${hash}"]`);
-    if(link) loadArchive(link.dataset.archive, link);
+    if (link) {
+      loadArchive(link.dataset.archive, link);
+    }
   });
 
 });
