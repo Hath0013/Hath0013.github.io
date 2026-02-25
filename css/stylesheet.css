@@ -70,6 +70,9 @@ p, li {
 .font-300 {
   font-weight: 300;
 }
+.border-bottom-1 {
+  border-bottom: 1px solid #000;
+}
 
 .heading-comma {
   font-family: "Oswald", sans-serif;
@@ -2061,6 +2064,13 @@ h1 {
   .dropdown-item {
     line-height: 0!important;
   }
+  .blog-intro {
+  font-size: 5rem!important;
+  line-height: 6rem;
+}
+.border-bottom-1 {
+  border-bottom: 0;
+}
 }
 @media only screen and (max-width: 738px) {
   .igloo {
