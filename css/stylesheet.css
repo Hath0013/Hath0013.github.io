@@ -1146,7 +1146,7 @@ a:hover {
 }
 
 /*Blog page*/
-#blog .blog-post a, {
+#blog .blog-post a {
   display: inline-block;
   text-decoration: underline;
   transition: all .2s;
@@ -1155,7 +1155,7 @@ a:hover {
 #blog .blog-post a:hover {
   color: #d92d26;
 }
-.evergreen a
+.evergreen a,
 .link-list-title {
   font-size: 18px;
   font-weight: 400;
