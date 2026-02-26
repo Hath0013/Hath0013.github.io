@@ -114,7 +114,7 @@
       </div>
     </section>
       <div class="row pt-3"id="back-to-top">
-        <div class="col-md-12 col-lg-8 pb-5 mb-5" id="blog-content">
+        <div class="col-md-12 col-lg-8 pb-5 mb-5  order-2 order-lg-1" id="blog-content">
 
             <!-- 2 images side by side
             <div class="container py-4 px-0">
@@ -129,7 +129,7 @@
           </div>-->
 
         </div>
-        <div class="col-md-12 col-lg-4">
+        <div class="col-md-12 col-lg-4 order-1 order-lg-2">
           <div class="position-sticky" style="top: 2rem">
             <div class="p-4 mb-3 blog-about">
               <h4>About</h4>
@@ -213,8 +213,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ".archives-list:not(.curated) [data-archive]"
   );
 
-  async function loadArchive(path, linkElement) {
-    if (!path) return; // safety guard
+  async function loadArchive(path, linkElement, pushHash = false) {
+    if (!path) return;
 
     try {
       container.style.opacity = 0.4;
@@ -238,9 +238,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
       container.style.opacity = 1;
 
+      // ✅ scroll to top of article content
+      container.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+
+      // optionally update URL hash
+      if (pushHash && linkElement) {
+        const hash = linkElement.getAttribute("href");
+        if (hash) {
+          history.pushState({ archive: path }, "", hash);
+        }
+      }
+
     } catch (err) {
       console.error(err);
-      // IMPORTANT: don't wipe existing content on unrelated hash clicks
       if (!container.innerHTML.trim()) {
         container.innerHTML = "<p>Archive could not be loaded.</p>";
       }
@@ -248,28 +261,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Click handler ONLY for archive links
+  // Click handler
   allLinks.forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
-
       const path = this.dataset.archive;
-      if (!path) return;
-
-      loadArchive(path, this);
-
-      // update URL hash safely
-      const hash = this.getAttribute("href");
-      if (hash) {
-        history.pushState({ archive: path }, "", hash);
-      }
+      loadArchive(path, this, true);
     });
   });
 
   // Initial load
   let initialLink = null;
-
   const hash = location.hash;
+
   if (hash) {
     const candidate = document.querySelector(`[href="${hash}"][data-archive]`);
     if (candidate) {
@@ -282,19 +286,18 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (initialLink) {
-    loadArchive(initialLink.dataset.archive, initialLink);
+    loadArchive(initialLink.dataset.archive, initialLink, false);
   }
 
-  // Back/forward navigation — ONLY load if hash belongs to archive link
+  // Back / forward navigation
   window.addEventListener("popstate", function() {
     const hash = location.hash;
     if (!hash) return;
 
     const link = document.querySelector(`[href="${hash}"][data-archive]`);
     if (link) {
-      loadArchive(link.dataset.archive, link);
+      loadArchive(link.dataset.archive, link, false);
     }
-    // otherwise ignore (back-to-top, anchors, etc.)
   });
 
 });
