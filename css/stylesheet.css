@@ -1158,10 +1158,9 @@ a:hover {
 #blog .blog-post a:hover {
   color: #d92d26;
 }
-.curated a,
 .link-list-title {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 0rem;
   padding-top: 1rem;
 }
