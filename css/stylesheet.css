@@ -1162,7 +1162,7 @@ a:hover {
 .link-list-title {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: .5rem;
+  margin-bottom: 0rem;
   padding-top: 1rem;
 }
 .link-list {
