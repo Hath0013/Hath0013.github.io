@@ -213,8 +213,13 @@ document.addEventListener("DOMContentLoaded", function () {
     ".archives-list:not(.curated) [data-archive]"
   );
 
-  async function loadArchive(path, linkElement, pushHash = false) {
+  async function loadArchive(path, linkElement, options = {}) {
     if (!path) return;
+
+    const {
+      pushHash = false,
+      scroll = false   // ✅ default: do NOT scroll
+    } = options;
 
     try {
       container.style.opacity = 0.4;
@@ -238,13 +243,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       container.style.opacity = 1;
 
-      // ✅ scroll to top of article content
-      container.scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      // ✅ ONLY scroll when explicitly requested
+      if (scroll) {
+        container.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
 
-      // optionally update URL hash
+      // update URL hash if requested
       if (pushHash && linkElement) {
         const hash = linkElement.getAttribute("href");
         if (hash) {
@@ -261,16 +268,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Click handler
+  // Click handler → scroll ✅
   allLinks.forEach(link => {
     link.addEventListener("click", function(e) {
       e.preventDefault();
-      const path = this.dataset.archive;
-      loadArchive(path, this, true);
+      loadArchive(this.dataset.archive, this, {
+        pushHash: true,
+        scroll: true   // only user clicks scroll
+      });
     });
   });
 
-  // Initial load
+  // Initial load → NO scroll ❌
   let initialLink = null;
   const hash = location.hash;
 
@@ -286,17 +295,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (initialLink) {
-    loadArchive(initialLink.dataset.archive, initialLink, false);
+    loadArchive(initialLink.dataset.archive, initialLink, {
+      pushHash: false,
+      scroll: false   // prevents skipping banner
+    });
   }
 
-  // Back / forward navigation
+  // Back / forward → scroll ✅ (expected behavior)
   window.addEventListener("popstate", function() {
     const hash = location.hash;
     if (!hash) return;
 
     const link = document.querySelector(`[href="${hash}"][data-archive]`);
     if (link) {
-      loadArchive(link.dataset.archive, link, false);
+      loadArchive(link.dataset.archive, link, {
+        pushHash: false,
+        scroll: true
+      });
     }
   });
 
