@@ -2263,6 +2263,9 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
+  .tab-group-title .nav-item {
+    padding-bottom: 12px;
+  }
   .name-intro {
     padding-top: 21px;
     line-height: 80px;
