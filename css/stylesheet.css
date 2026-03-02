@@ -612,7 +612,7 @@ a:hover {
   background-color: #fffaf8;
 }
 .bg-tan {
-  background-color: #f7f4ed;
+  background-color: #FFF3EA;
 }
 
 
@@ -980,22 +980,38 @@ a:hover {
 .more-projects {
   padding-top: 1rem;
 }
+.more-projects h3 {
+  color: #362442;
+}
+.more-projects .project-sub {
+  padding-bottom: 0;
+}
 
 /* Project Styling */
+.scope-wrapper {
+  max-width: 67%;
+}
 .scope-list {
     list-style-type: none;
     margin-top: 11px!important;
 }
+.scope-list h3 {
+  padding-top: 1rem!important;
+  padding-bottom: .5rem!important;
+  color: #362442;
+}
 .scope-list li {
-    border-bottom: solid 1.25px #8d8d8d;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 24px;
-    font-weight: 500;
+    border-bottom: solid 1.25px #E4CFF3;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #3F2A4D;
 }
 .scope-list li:last-child {
     border-bottom: 0!important;
 }
+
 
 .hhi-border {
     border: solid 1px #e9ecef;
@@ -1418,10 +1434,10 @@ a:hover {
   color: #362442;
 }
 .paper-label {
-  border: solid 1px #1a1a1a;
+  border: solid 1px #E4CFF3;
   border-radius: 10px;
   margin-bottom: 2rem;
-  padding: 40px;
+  padding: 20px 40px;
   margin-left: 0!important;
   background-image: url('../img/paper-texture.jpg');
 }
@@ -2145,6 +2161,11 @@ h1 {
   }
 
 
+.container {
+  padding-right: var(--bs-gutter-x, 2rem);
+    padding-left: var(--bs-gutter-x, 2rem);
+}
+
 /* Break Points */
 @media only screen and (max-width: 480px) {
 #mainNav .navbar-brand:hover {
@@ -2179,7 +2200,7 @@ h1 {
     border-radius: 100px!important;
 }
   .grid .page-title {
-    padding-top: 35px;
+    padding-top: 0;
   }
   .mpvr-title-mobile {
     display: block;
@@ -2204,8 +2225,7 @@ h1 {
     font-size: 50px;
   }
   .nav-tabs-horizontal .nav-item .nav-link {
-    font-size: 12px!important;
-    margin-right: 5px!important;
+    font-size: 16px!important;
   }
 
   #mainNav .navbar-nav li,
@@ -2218,10 +2238,28 @@ h1 {
   .blog-intro {
   font-size: 5rem!important;
   line-height: 6rem;
-}
-.border-bottom-1 {
-  border-bottom: 0;
-}
+  }
+  .border-bottom-1 {
+    border-bottom: 0;
+  }
+  .scope-list {
+    margin-top: 0!important;
+    padding-top: 0!important;
+  }
+  .scope-list h3 {
+    padding-top: 1rem!important;
+    padding-bottom: 0!important;
+    color: #362442;
+    font-size: 20px;
+  }
+  .scope-list li {
+      border-bottom: solid 1.25px #E4CFF3;
+      padding-top: 0!important;
+      padding-bottom: 0!important;
+      font-size: 20px;
+      font-weight: 400;
+      color: #3F2A4D;
+  }
 }
 
 }
@@ -2231,11 +2269,6 @@ h1 {
   }
   .sticky-tabs-horizontal {
     padding-top: 0!important;
-  }
-  .scope-list li {
-    font-size: 18px;
-    padding-top: 5px;
-    padding-bottom: 5px;
   }
   .more-projects .pb-4 {
     padding-bottom: .5rem!important;
@@ -2263,7 +2296,7 @@ h1 {
 }
 
 @media only screen and (max-width: 768px) {
-  .tab-group-title .nav-item {
+  .nav-tabs-horizontal .nav-item {
     padding-bottom: 12px;
   }
   .name-intro {
@@ -2271,6 +2304,9 @@ h1 {
     line-height: 80px;
     font-size: 55px!important;
     margin-bottom: 16px;
+  }
+  .page-title h2 {
+    font-size: 55px!important;
   }
   .grid {
     width: 100%;
@@ -2302,6 +2338,14 @@ h1 {
     .project-img-right {
       border-radius: 15px 15px 0 0;
     }
+    .paper-label {
+      padding: 20px;
+    }
+    .scope-list li {
+      font-size: 16px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
 
 }
 
@@ -2313,6 +2357,9 @@ h1 {
 /* Mobile tables hidden by default */
 .mobile-table {
   display: none!important;
+}
+.mobile-table h5 {
+  color: #385D6E;
 }
 
 /* When screen width is less than 992px */
@@ -2356,7 +2403,10 @@ h1 {
       line-height: 1;
       vertical-align: middle;
       white-space: nowrap;
-}
+    }
+    .scope-wrapper {
+      max-width: 100%;
+    }
 }
 
 
