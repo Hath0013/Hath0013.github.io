@@ -1225,6 +1225,10 @@ a:hover {
 #blog .blog-post a:hover {
   color: #d92d26;
 }
+#blog .blog-post h2 {
+  font-weight: 400;
+  color: #1a1a1a;
+}
 .link-list-title {
   font-size: 18px;
   font-weight: 500;
