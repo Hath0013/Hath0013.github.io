@@ -1276,7 +1276,7 @@ a:hover {
   padding: 100px 0 25px 0;
   font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 7rem!important;
   line-height: 8rem;
@@ -2215,12 +2215,6 @@ h1 {
     .mpvr-title-desktop {
     display: none;
   }
-  .name-intro {
-    padding-top: 25px;
-    line-height: 80px;
-    font-size: 40px !important;
-    margin-bottom: 16px;
-  }
   .all-work {
     padding-top: 67px;
   }
@@ -2233,7 +2227,6 @@ h1 {
   .nav-tabs-horizontal .nav-item .nav-link {
     font-size: 16px!important;
   }
-
   #mainNav .navbar-nav li,
   .linkedin i {
     font-size: 26px;
@@ -2241,9 +2234,8 @@ h1 {
   .dropdown-item {
     line-height: 0!important;
   }
-  .blog-intro {
-  font-size: 5rem!important;
-  line-height: 6rem;
+  #blog .navbar {
+    border-bottom: 0;
   }
   .border-bottom-1 {
     border-bottom: 0;
@@ -2266,11 +2258,16 @@ h1 {
       font-weight: 400;
       color: #3F2A4D;
   }
-  #blog .navbar {
-    border-bottom: 0;
+  .recent .p-5,
+  .canscipub {
+    padding: 24px!important;
   }
-  .blog-intro {
-    padding: 30px 0 25px 0;
+  .label {
+    padding: 20px;
+    margin-bottom: 1rem;
+  }
+  #blog .blog-post h2 {
+    font-size: 40px;
   }
 }
 
@@ -2313,8 +2310,8 @@ h1 {
   }
   .name-intro {
     padding-top: 21px;
-    line-height: 80px;
-    font-size: 55px!important;
+    line-height: 48px!important;
+    font-size: 50px!important;
     margin-bottom: 16px;
   }
   .page-title h2 {
@@ -2357,6 +2354,12 @@ h1 {
       font-size: 16px;
       padding-top: 5px;
       padding-bottom: 5px;
+    }
+    .blog-intro {
+      font-size: 3.25rem!important;
+      line-height: 3.75rem;
+      font-weight: bold;
+      padding: 30px 0 25px 0;
     }
 
 }

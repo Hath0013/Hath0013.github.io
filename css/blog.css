@@ -14,3 +14,26 @@
   margin-bottom: 4rem;
 }
 
+.color-card {
+    height: 300px;              /* vertical rectangle */
+    border-radius: 30px;        /* rounded corners */
+    padding: 20px;              /* inner spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* title top, hex bottom */
+    color: #fff;                /* text color, adjust for contrast */
+}
+
+.color-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+    font-size: 24px;
+
+}
+
+.color-hex {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
