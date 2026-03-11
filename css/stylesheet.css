@@ -1457,8 +1457,8 @@ a:hover {
   background-color: #f6f1f9;
 }
 .work-xp {
-  padding-top: 1rem;
-  padding-bottom: .5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
   padding-right: 1.25rem;
   border-bottom: solid 1px #dddddd;
 }
@@ -1498,7 +1498,7 @@ a:hover {
   padding-bottom: .25rem;
 }
 .education-details {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   color: #1a1a1a;
   padding-bottom: 1.25rem;
@@ -1629,6 +1629,13 @@ h2.accordion-header {
 .accordion-item:first-of-type .accordion-button {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+[type=button]:not(:disabled) {
+      padding-left: 0;
+    padding-right: 0;
 }
 .accordion-body {
     padding: 0 0 1.25rem 0;
