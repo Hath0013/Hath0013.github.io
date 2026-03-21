@@ -228,46 +228,55 @@
 
     <h4 class="mb-3 form-title">Let’s Get Started</h4>
 
-    <form action="https://formspree.io/f/hannahhatherell@gmail.com" method="POST">
-      <div class="row g-3">
+  <form action="https://formspree.io/f/xlgpknpk" method="POST">
+  <div class="row g-3">
 
-        <!-- Top row: First Name & Last Name -->
-        <div class="col-12 col-md-6">
-          <label class="form-label">First Name <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" placeholder="First name" name="first_name" required>
-        </div>
+    <!-- Optional: Email subject -->
+    <input type="hidden" name="_subject" value="New Freelance Inquiry">
 
-        <div class="col-12 col-md-6">
-          <label class="form-label">Last Name <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
-        </div>
+    <!-- Optional: Redirect after submit -->
+    <input type="hidden" name="_redirect" value="https://yourdomain.com/thank-you.html">
 
-        <!-- Second row: Email & Company -->
-        <div class="col-12 col-md-6">
-          <label class="form-label">Email <span class="text-danger">*</span></label>
-          <input type="email" class="form-control" placeholder="you@email.com" name="email" required>
-        </div>
+    <!-- Honeypot (spam protection) -->
+    <input type="text" name="_gotcha" style="display:none">
 
-        <div class="col-12 col-md-6">
-          <label class="form-label">Company / Organization <span class="text-danger">*</span></label>
-          <input type="text" class="form-control" placeholder="Your business" name="company" required>
-        </div>
+    <!-- Top row: First Name & Last Name -->
+    <div class="col-12 col-md-6">
+      <label class="form-label">First Name <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="First name" name="first_name" required>
+    </div>
 
-        <!-- Project Details -->
-        <div class="col-12">
-          <label class="form-label">Project Details <span class="text-danger">*</span></label>
-          <textarea class="form-control" rows="4" placeholder="Tell me a bit about your project..." name="project_details" required></textarea>
-        </div>
+    <div class="col-12 col-md-6">
+      <label class="form-label">Last Name <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="Last name" name="last_name" required>
+    </div>
 
-        <!-- Submit Button -->
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary w-100">
-            Send Inquiry
-          </button>
-        </div>
+    <!-- Second row: Email & Company -->
+    <div class="col-12 col-md-6">
+      <label class="form-label">Email <span class="text-danger">*</span></label>
+      <input type="email" class="form-control" placeholder="you@email.com" name="email" required>
+    </div>
 
-      </div>
-    </form>
+    <div class="col-12 col-md-6">
+      <label class="form-label">Company / Organization <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" placeholder="Your business" name="company" required>
+    </div>
+
+    <!-- Project Details -->
+    <div class="col-12">
+      <label class="form-label">Project Details <span class="text-danger">*</span></label>
+      <textarea class="form-control" rows="4" placeholder="Tell me a bit about your project..." name="project_details" required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="col-12">
+      <button type="submit" class="btn btn-primary w-100">
+        Send Inquiry
+      </button>
+    </div>
+
+  </div>
+</form>
 
   </div>
 </div>
