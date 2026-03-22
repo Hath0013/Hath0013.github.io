@@ -1564,7 +1564,10 @@ padding-top: 8px;
 #resume h3 {
   color: #362442;
 }
-#resume .fa {
+#resume .fa-certificate,
+#resume .fa-graduation-cap,
+#resume .fa-cog,
+#resume .fa-heart {
   font-size: 16px;
 }
 .resume-button .btn:not(:disabled):not(.disabled) {
@@ -2354,6 +2357,7 @@ h1 {
 }
 
 /* Break Points */
+@media only screen and (max-width: 480px) {
 .resume-lg {
   margin-top: 30px;
 }
@@ -2363,16 +2367,11 @@ h1 {
   #mainNav {
     padding-bottom: 0!important;
   }
-  #mainNav .navbar-nav li > a {
-    font-size: 20px;
-  }
   #mainNav .navbar-nav li:hover,
   #mainNav .navbar-nav li a:hover {
     cursor: pointer;
   }
-    #mainNav .navbar-nav li > a:not(#mainNav .navbar-nav li.drop-menu-active > a) {
-    font-weight: 200;
-  }
+
   .dropdown-menu {
     margin-left: auto;
     min-width: 100%!important;
@@ -2564,6 +2563,21 @@ h1 {
 @media (max-width: 992px) {
   .intro-section .avatar {
     display: none;
+  }
+  #mainNav .navbar-nav li > a {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  #mainNav .navbar-nav li {
+    font-size: 16px;
+    text-align: right;
+  }
+  #mainNav .drop-menu-active a {
+    color: #d92c26;
+    font-weight: 700!important;
+  }
+  #mainNav .drop-menu-active > a::before {
+    opacity: 0;
   }
 
   .name-intro {
