@@ -2576,7 +2576,8 @@ h1 {
     color: #d92c26;
     font-weight: 700!important;
   }
-  #mainNav .drop-menu-active > a::before {
+  #mainNav .drop-menu-active > a::before,
+  #mainNav .drop-menu-active > a:hover::before {
     opacity: 0;
   }
 
