@@ -2087,7 +2087,6 @@ ul ul a:hover {
 
 .dropdown-item {
     font-size: 16px;
-    padding: 2px 22px 2px 28px!important;
     transition: .1s all;
     color: #1a1a1a;
     font-weight: 300;
@@ -2271,6 +2270,10 @@ ul ul a:hover {
 
 /* show content 992px and below */
 @media(max-width:992px) {
+  .navbar-nav {
+    border-bottom: 1px solid #757575;
+    padding-bottom: 10px;
+  }
       section .container {
         padding-left: 0;
         padding-right: 0;
@@ -2281,6 +2284,15 @@ ul ul a:hover {
     margin-top: -33px;
     margin-right: 3px;
   }
+  .dropdown-menu {
+    background: transparent;
+    border: 0;
+}
+  .dropdown-menu a {
+    color: #737373;
+    font-size: 16px;
+    line-height: 1rem;
+}
     .fa-bars {
       font-size: 36px;
       color: #1a1a1a;
@@ -2294,9 +2306,6 @@ ul ul a:hover {
     }
     .show-desktop {
         display: block;
-    }
-.top-grn-check {
-    display: none!important;
     }
     .navbar-nav li.nav-item:not(.nav-item .text-right) {
         text-align: left;
@@ -2564,8 +2573,8 @@ h1 {
   .intro-section .avatar {
     display: none;
   }
-  #mainNav .navbar-nav li > a {
-    font-size: 16px;
+  #mainNav .navbar-nav li > a:not(.dropdown-menu a) {
+    font-size: 18px;
     font-weight: 300;
   }
   #mainNav .navbar-nav li {
@@ -2577,7 +2586,9 @@ h1 {
     font-weight: 700!important;
   }
   #mainNav .drop-menu-active > a::before,
-  #mainNav .drop-menu-active > a:hover::before {
+  #mainNav .drop-menu-active > a:hover::before,
+  #mainNav .drop-menu-active > a:focus::before,
+#mainNav .drop-menu-active > a:focus-visible::before {
     opacity: 0;
   }
 
@@ -2588,9 +2599,7 @@ h1 {
    .work {
     padding-top: 0;
   }
-  .dropdown-toggle {
-  display: none!important;
-}
+
   .desktop-table {
     display: none!important;  /* hide desktop version */
   }
