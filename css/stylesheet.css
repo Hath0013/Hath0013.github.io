@@ -2050,7 +2050,7 @@ ul ul a:hover {
 /* Ensure positioning context */
 .dropdown-menu a {
   position: relative;
-  padding-left: 1.25em; /* reserve space for the dot */
+  padding-left: 1.75em; /* reserve space for the dot */
 }
 
 /* Dot (hidden by default) */
@@ -2090,6 +2090,7 @@ ul ul a:hover {
     transition: .1s all;
     color: #1a1a1a;
     font-weight: 300;
+    line-height: 1.25rem;
 }
 
 .dropdown-item:hover {
