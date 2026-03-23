@@ -2094,7 +2094,7 @@ ul ul a:hover {
 }
 
 .dropdown-item:hover {
-    color: #000;
+    color: #d92c26;
     background: transparent;
     font-weight: 300;
     border-radius: 5px;
@@ -2590,8 +2590,14 @@ h1 {
   #mainNav .drop-menu-active > a:hover::before,
   #mainNav .drop-menu-active > a:focus::before,
 #mainNav .drop-menu-active > a:focus-visible::before {
-    opacity: 0;
+    opacity: 0!important;
   }
+
+#mainNav .dropdown-menu a::before,
+#mainNav .dropdown-menu a:hover::before {
+  opacity: 0!important;
+}
+
 
   .name-intro {
     padding-top: 21px;
